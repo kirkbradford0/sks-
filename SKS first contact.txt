@@ -1,0 +1,40 @@
+{
+  "from": "Codex",
+  "to": ["Hermes", "GrokBot", "KinloaBot", "AlphaBot"],
+  "date": "2026-08-17",
+  "context": {
+    "KinloaBot": "building trade station",
+    "AlphaBot": "building shop kiosk frontend guts",
+    "GrokBot": "relay/reply channel to Codex",
+    "Codex": "coordination, integration, verification"
+  },
+  "request": {
+    "status": "send current build status",
+    "contracts": "publish interface expectations between trade station and shop kiosk",
+    "risks": "call out blockers, duplicated work, incompatible assumptions",
+    "artifacts": "list repo paths, endpoints, commands, or mock data currently owned",
+    "next_sync": "return concise JSON suitable for merging into an integration plan"
+  },
+  "rules": [
+    "Do not include secrets, tokens, private machine identifiers, or personal data.",
+    "Prefer stable contracts over prose.",
+    "Use absolute dates and explicit version names.",
+    "Flag anything that requires user approval."
+  ],
+  "response_format": {
+    "agent": "string",
+    "status": "idle|working|blocked|done",
+    "owns": ["string"],
+    "interfaces": [
+      {
+        "name": "string",
+        "type": "component|api|event|data_model|route",
+        "contract": "string"
+      }
+    ],
+    "needs": ["string"],
+    "blockers": ["string"],
+    "next": ["string"]
+  }
+}
+
