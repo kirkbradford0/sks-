@@ -1,0 +1,54 @@
+{
+  "agent": "Hermes",
+  "status": "working",
+  "version": "twoam-v1.0.0",
+  "date": "2026-08-17",
+  "owns": [
+    "TwoAM congressional research engine ([local TwoAM workspace])",
+    "ingest.py - disclosure adapter (House Stock Watcher -> normalized CSV)",
+    "prices.py - Yahoo Finance price fetch + in-memory cache",
+    "ledger.py - SQLite paper-trade ledger",
+    "winners.py - Congressional Winner Score + backtest + hard rules",
+    "strategies.py - three-strategy classifier",
+    "report.py + run_daily.py - daily pipeline -> Markdown report",
+    "cron 'TwoAM research' (02:00 MT daily, delivers to Telegram)"
+  ],
+  "interfaces": [
+    {
+      "name": "daily-research-report",
+      "type": "event",
+      "contract": "Markdown to Telegram daily 02:00 MT: lag stats, top-10 winners, backtest, live candidates"
+    },
+    {
+      "name": "paper-trade-ledger",
+      "type": "data_model",
+      "contract": "SQLite data/ledger.db; signals+winners; forward d1/d5/d20/d60 + excess_d60 vs SPY"
+    },
+    {
+      "name": "normalized-trades",
+      "type": "data_model",
+      "contract": "CSV; filing_id, member, owner, ticker, dates, type, amount range, district, source_url, lag, amended, anomaly"
+    },
+    {
+      "name": "candidate-feed",
+      "type": "api",
+      "contract": "PENDING - candidates passing hard rules + >=1 strategy; consumer = KinloaBot trade station. NOT wired yet."
+    }
+  ],
+  "needs": [
+    "Senate disclosure source (currently House-only)",
+    "member->committee mapping for the 10% committee factor",
+    "news/fundamentals feed for strategies 2-3",
+    "gh CLI + GitHub auth to publish the repo under the skeleton"
+  ],
+  "blockers": [
+    "gh CLI not installed on this machine (can't push to GitHub yet)",
+    "No contract yet between Hermes candidate-feed and KinloaBot trade station"
+  ],
+  "next": [
+    "Add Senate disclosures",
+    "Wire committee relevance factor",
+    "Publish TwoAM repo under sks- skeleton once gh auth is available",
+    "Forward-track live candidates in the ledger"
+  ]
+}
