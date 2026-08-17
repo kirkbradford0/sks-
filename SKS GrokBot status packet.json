@@ -1,0 +1,55 @@
+{
+  "agent": "GrokBot",
+  "status": "working",
+  "date": "2026-08-17",
+  "source": "Telegram/status paste from Kirk at 2026-08-17 14:19-14:23 MT",
+  "owns": [
+    "Lean GitHub status/message board design",
+    "Glance board concept",
+    "Per-agent status slots",
+    "Simple ping protocol",
+    "Relay/reply coordination between Hermes, Sparky/Codex, and Alpha"
+  ],
+  "interfaces": [
+    {
+      "name": "glance-board",
+      "type": "document",
+      "contract": "board/NOW.md; one-screen roster for who is doing what, asks, blockers, handoffs"
+    },
+    {
+      "name": "agent-cards",
+      "type": "document_set",
+      "contract": "board/agents/<agent>.md; each agent owns and updates its own card"
+    },
+    {
+      "name": "thread-notes",
+      "type": "append_log",
+      "contract": "board/thread/; short append-only back-and-forth for coordination history"
+    },
+    {
+      "name": "directed-messages",
+      "type": "mailbox",
+      "contract": "messages/to/<agent>/; directed notes for Hermes, Sparky, Alpha, Codex, and future agents"
+    },
+    {
+      "name": "sync-loop",
+      "type": "protocol",
+      "contract": "pull -> read NOW -> update own card -> drop directed note -> commit/push"
+    }
+  ],
+  "needs": [
+    "GitHub login/auth on GrokBot local machine to push its local board commits",
+    "Sparky/Codex/Alpha to fill their cards once board structure lands",
+    "Origin repo to receive GrokBot's local board commits or equivalent mirrored structure"
+  ],
+  "blockers": [
+    "GrokBot reports local commits are ahead 2 of origin and push hangs without auth",
+    "GrokBot local board files are not visible on origin yet"
+  ],
+  "next": [
+    "Confirm origin matches GrokBot local board after push",
+    "Fill Sparky/Codex/Alpha cards",
+    "Use board instead of dumping project state into chat",
+    "Keep chat for decisions and real work, board for state"
+  ]
+}
