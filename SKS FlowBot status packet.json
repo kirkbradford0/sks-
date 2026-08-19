@@ -1,42 +1,42 @@
 {
   "agent": "FlowBot",
-  "status": "provisioned",
+  "status": "working",
   "date": "2026-08-19",
   "source": "Agent definition screenshot from Kirk (AI Decision-Making Flowchart Generator Agent), onboarded to sks- 2026-08-19",
+  "runtime": "Hermes skill 'flowbot' (creative category) — renders Mermaid to SVG/PNG/PDF via mermaid-cli (mmdc) + system Chrome, offline",
   "mandate": "You are an AI Decision-Making Flowchart Generator Agent. Your primary responsibility is to assist users in creating detailed and effective decision-making flowcharts. You provide tools that allow users to generate new flowcharts, refine existing ones, and export them in user-friendly formats like PDF. Your focus is on clarity, logical flow, and practical application to ensure each flowchart is a valuable decision-making tool. You offer suggestions for optimization, and you always strive to make complex decision-making processes easy and intuitive for the user.",
   "owns": [
     "Generating new decision-making flowcharts from user-described decisions",
     "Refining existing flowcharts for clarity and logical flow",
-    "Exporting flowcharts to user-friendly formats (PDF)",
-    "Suggesting optimizations for decision logic"
+    "Exporting flowcharts to user-friendly formats (PDF/PNG/SVG)",
+    "Subdividing projects into per-topic flowchart assignments",
+    "Cleaning up spelling/grammar in flowchart labels",
+    "Master project-map rendering (e.g. SKS project hierarchy)"
   ],
   "interfaces": [
     {
       "name": "flowchart-generate",
       "type": "tool",
-      "contract": "PENDING - user describes a decision; FlowBot returns a structured flowchart (start, steps, decision branches, end states)"
+      "contract": "User describes a decision/process; FlowBot writes Mermaid flowchart TD and renders to PNG + PDF under ~/flowcharts/"
     },
     {
-      "name": "flowchart-refine",
+      "name": "flowchart-subdivide",
       "type": "tool",
-      "contract": "PENDING - edit/rework an existing flowchart's structure and wording"
+      "contract": "User gives a project list; FlowBot produces one master hierarchy map plus per-project flowcharts"
     },
     {
       "name": "flowchart-export",
       "type": "tool",
-      "contract": "PENDING - render flowchart to PDF or another user-friendly format"
+      "contract": "Mermaid -> PNG/SVG/PDF via mmdc; PNG delivered inline, PDF for share/print"
     }
   ],
   "needs": [
-    "A chart-rendering + PDF export path (e.g. Mermaid -> SVG/PDF) to make generation concrete",
-    "Decision on runtime: run as a Hermes skill vs a standalone agent"
+    "Final list of projects for the authoritative full map (canonical build index is the current source)"
   ],
-  "blockers": [
-    "No runtime yet - currently a documented agent contract only"
-  ],
+  "blockers": [],
   "next": [
-    "Decide FlowBot runtime (Hermes skill vs standalone)",
-    "Wire flowchart render + PDF export",
-    "Point it at a first real use case (e.g. DWS appeal flow, job-hunt decision tree, shop estimate flow)"
+    "Confirm the SKS master project-map matches Kirk's intended hierarchy",
+    "Generate per-project flowcharts (job-hunt funnel, AutoFlow estimate flow, TwoAM candidate-feed path, etc.)",
+    "Point FlowBot at first real decision trees"
   ]
 }
