@@ -71,6 +71,7 @@ Canonical project map: `SKS canonical build index 2026-08-18.md`
 | Add GrokBot status packet | Sparky/GrokBot | Coordination | `SKS GrokBot status packet.json` |
 | Connect Lovable connector | Kirk + Sparky | Inventory | Workspace `Kirk's Lovable`, 36 projects reported |
 | Create canonical build index | Sparky | Inventory | `SKS canonical build index 2026-08-18.md` |
+| Onboard FlowBot (flowchart generator agent) | Kirk + Sparky | Coordination / tools | `SKS FlowBot status packet.json` |
 
 ## Card Template
 

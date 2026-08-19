@@ -74,6 +74,7 @@ This file is the map. The active work queue lives in `SKS single kanban board.md
 |---|---|---|---|
 | PIFORHERMES | GitHub `kirkbradford0/PIFORHERMES` | keep selectively | Agent harness, multi-provider AI tooling, prompt templates |
 | browser-harness | GitHub `browser-use/browser-harness` | external gift/reference | Live browser bridge and helper-writing workflow |
+| FlowBot | SKS status packet | provisioned | AI decision-making flowchart generator (generate / refine / export to PDF) | Decide runtime + first use case |
 | Context Bridge / Markup | Lovable | not published | Public context passoff between AI projects | Could become a cleaner SKS board UI later |
 | Memory House | Lovable `seemyfiles` | published | Visual memory/file placement metaphor | Cannibalize for personal memory UX |
 | My Smart App | Lovable | not published | Unclear duplicate/visual app | Archive unless clarified |
