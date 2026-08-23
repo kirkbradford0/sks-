@@ -1,10 +1,195 @@
 # SKS single kanban board
 
-Updated: 2026-08-20
+Updated: 2026-08-23
 
 Purpose: one board for Sparky/Codex, Hermes, GrokBot, AlphaBot, KinloaBot, FlowBot, and future agents. Do not create competing boards unless this file points to them.
 
 Canonical project map: `SKS canonical build index 2026-08-18.md`
+
+## Command & Life Map Schema (Strike Force Playbook)
+
+Status: ACTIVE — inserted 2026-08-23 per Kirk (H.I.L. Governor) directive. This is the command hierarchy, project portfolio, cost model, and reasoning pipeline for the SKS strike team. Treat it as canonical doctrine until Kirk revises it.
+
+```text
+                               ┌───────────────────────────┐
+                               │   KIRK BRADFORD (H.I.L.)  │
+                               │   Human-in-the-Loop Governor│
+                               └─────────────┬─────────────┘
+                                             │
+                       ┌─────────────────────┴─────────────────────┐
+                       ▼                                           ▼
+         ┌───────────────────────────┐               ┌───────────────────────────┐
+         │   SPARKY / OPENAI ($110)  │               │   HERMES / OPENCLAW ($20) │
+         │   Mind / Orchestrator     │               │   Body / Execution Engine │
+         └─────────────┬─────────────┘               └─────────────┬─────────────┘
+                       │                                           │
+         ┌─────────────┴─────────────┐               ┌─────────────┴─────────────┐
+         ▼                           ▼               ▼                           ▼
+  ┌──────────────┐            ┌──────────────┐┌──────────────┐            ┌──────────────┐
+  │  WET TEAMS   │            │  DRY TEAMS   ││ CLAW ENGINE  │            │  REPOS & DB  │
+  │ ChatGPT,     │            │ Terminal,    ││ 7 Claw System│            │ SKS, SKS     │
+  │ Codex, Grok  │            │ Claude Code, ││ (Patriarch) │            │ Skills, D:\  │
+  │ + Hermes     │            │ Gemini, etc. │└──────────────┘            └──────────────┘
+  └──────────────┘            └──────────────┘
+```
+
+### 1. AI Agent Strike Team & Operating Costs
+
+| Agent | Role / Alias | Engine Function | Cost / Allocation |
+|---|---|---|---|
+| Orchestrator | Sparky (OpenAI / ChatGPT) | Mind / Consciousness: Translates Kirk's intent into explicit execution plans, orchestrates agent loops, performs meta-evaluation. | $110 / month |
+| Execution Engine | Hermes / OpenClaw | Body / Hands: Code generation, task automation, file operations, web scraping, and terminal actions. | $20 / month (Ollama + API) |
+| Wet Teams | Hybrid Orchestration | ChatGPT OpenAI, Codex, DeepSeek V4, Grok paired directly with Hermes for heavy logic and math. | Variable API Usage |
+| Dry Teams | Terminal Autonomous | Grok in Terminal, Claude Code Terminal, Gemini, Lovable agents. | Subscription / API |
+
+### 2. Core Project Portfolio & Repositories
+
+```text
+                       ┌───────────────────────────────────────────┐
+                       │          KIRK'S PROJECT ECOSYSTEM         │
+                       └─────┬───────────────────┬───────────┬─────┘
+                             │                   │           │
+            ┌────────────────┴┐          ┌───────┴──────┐   └────────────────┐
+            ▼                 ▼          ▼              ▼                    ▼
+     ┌──────────────┐  ┌────────────┐┌──────────────┐┌──────────────┐  ┌───────────┐
+     │ FELONS MELON │  │ AUTOMOTIVE ││ DATA & MEDIA ││ JOB & TRADING│  │ SKS ARCH  │
+     │  REENTRY PLAT│  │  SOLUTIONS ││ KINLOASLATE  ││ ENGINES      │  │ REPOSITOR │
+     └──────────────┘  └────────────┘└──────────────┘└──────────────┘  └───────────┘
+```
+
+**A. Felon's Melon (felonsmelon.com)** — Reentry platform combining automated legal narrative generation, daily budgeting, job/networking tools, and therapy booking.
+
+Core Modules:
+- FM Budget Module: 5-step financial system (M1 Take-Home, M2 Monthly Nut, M3 Trap Wall, M4 Daily Number, M5 Exit Ramp).
+- Recovery & Therapy Network: Direct booking engine for online therapy, life skills courses, and legal/narrative generation.
+- Automated Publishing Loop: Daily generation of 2–3 articles connecting justice-impacted stories, auto tools, spirituality, and reentry support across Medium, Substack, and social channels.
+
+**B. Automotive Repair Software Suite**
+- Bradford Automotive / Sparky Auto: Kiosk and shop management system running on local hardware and server backends.
+- Pocket Bays CRM: Work order processing, repair closer, and scheduling suite (The "Kobayashi Maru" repair scheduler).
+- Automotive Kiosk: Customer self-intake hardware and digital shop front, targeted for deployment within 30 days.
+
+**C. Content Engine & KinloaSlate Memory**
+- KinloaSlate: Long-term external memory architecture and media engine storing historical context, state deltas, and brand assets.
+- Content Production Goal: 70 articles produced via Sparky/Hermes loop for YouTube, VTubing/Forecasting, and Substack, driving traffic directly into Felon's Melon and auto shop tools.
+
+**D. Job Generation & Trading Systems**
+- Lead Gen & Scraping: Alpha Kinloa, KirkHermes BOT, and Killchain scrapers targeting job listings and client outreach.
+- Trading Engine: Swing trading + covered call strategies designed to grow monthly capital reserves and build the emergency firewall.
+
+### 3. Repository Architecture & Storage (SKS)
+
+```text
+┌────────────────────────────────────────────────────────────────────────┐
+┌────────────────────────────────────────────────────────────────────────┐
+│                          SKS (STRIKE TEAM SYSTEM)                      │
+├────────────────────────────────────────────────────────────────────────┤
+│ • SKS Main Repo: Onboarding, strategy, logic flows, execution plans   │
+│ • SKS SKILLS (Private Repo): Hermes execution prompts & agent skills  │
+│ • SKS Phase I (D:\ Ext Drive): Archives, Marketing, KinloaSlate Memory │
+│ • SKS Phase III: Server backends for Kiosks, Pocket Bays, & Shop CRM   │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+### 4. Architectural Agentic Loops & Reasoning Pipeline
+
+Every task passes through an extended 8-Stage Agentic Loop before output is finalized:
+
+```text
+[Stage 1: UNDERSTAND] ──► [Stage 2: PLAN] ──► [Stage 3: EXECUTE]
+         ▲                                            │
+         │                                            ▼
+[Stage 5: ITERATE]   ◄── [More Tools?] ◄── [Stage 4: VERIFY]
+         │                     │ (No)
+         ▼                     ▼
+[Stage 7: OPTIMIZE] ──► [Stage 6: SUMMARIZE]
+         │                     │
+         ▼                     ▼
+[Stage 8: PATRIARCH] ──► Final Delivery / New Plan Assigned
+```
+
+- **Understand**: Parse request, classify user intent.
+- **Plan**: Determine tool sequence and execution order.
+- **Execute**: Run local commands, call tools, and generate code/SQL.
+- **Verify**: Test results and validate outputs against requirements.
+- **Iterate**: Loop back with updated context if additional tools are needed.
+- **Summarize**: Deliver finalized response under safety counter limits (max_loop_iterations = 5).
+- **Optimize & Educate**: Refine underlying prompts and document learned patterns.
+- **Patriarch Assignment**: Patriarch evaluates system state, re-allocates sub-agents, and initiates new goals.
+
+### 5. The 7 Claw OpenClaw System (Command Hierarchy)
+
+```text
+                          ┌───────────────────────────┐
+                          │   KIRK (Human Governor)   │
+                          └─────────────┬─────────────┘
+                                        │
+                          ┌─────────────▼─────────────┐
+                          │   SPARKY (Orchestrator)   │
+                          └─────────────┬─────────────┘
+                                        │
+                     ┌──────────────────┴──────────────────┐
+                     ▼                                     ▼
+        ┌─────────────────────────┐           ┌─────────────────────────┐
+        │  HERMES / OPENCLAW RUN  │           │   KINLOASLATE MEMORY    │
+        └────────────┬────────────┘           └─────────────────────────┘
+                     │
+ ┌───────────┬───────┴───┬───────────┬───────────┬───────────┬───────────┐
+ ▼           ▼           ▼           ▼           ▼           ▼           ▼
+Claw 1      Claw 2      Claw 3      Claw 4      Claw 5      Claw 6      Claw 7
+SCOUT       INTAKE      SCORE       RESEARCH    ROUTER      PRODUCTION  VERIFICATION
+```
+
+- **Claw 1 (SCOUT)**: Observes environment without interpretation (Alpha = external web/job signals, Bravo = internal codebase discovery, Charlie = contradiction detection).
+- **Claw 2 (INTAKE)**: Evaluates incoming signals, classifies data, and verifies provenance.
+- **Claw 3 (SCORE)**: Deduplicates, evaluates value, and prioritizes action items.
+- **Claw 4 (RESEARCH)**: Contextualizes queries, identifies solutions, and validates references.
+- **Claw 5 (ROUTER)**: Verifies constraints, assigns risk ratings, and routes tasks to appropriate execution targets.
+- **Claw 6 (PRODUCTION)**: Builds code, outputs drafts, records media, and hands off build artifacts.
+- **Claw 7 (VERIFICATION)**: Evaluates build quality against criteria, inspects lineage, and ensures safety before deployment.
+
+### 6. Real Monthly Budget & Cash Flow Allocation
+
+```text
+   ┌───────────────────────────────────────────────────────────────────┐
+   │                  MONTHLY REAL CASH FLOW SYSTEM                   │
+   └─────────────────────────────────┬─────────────────────────────────┘
+                                     │
+                     ┌───────────────┴───────────────┐
+                     ▼                               ▼
+       ┌───────────────────────────┐   ┌───────────────────────────┐
+       │     FIXED OVERHEAD        │   │  STRIKE TEAM TECH STACK   │
+       │   Monthly Nut (M2)        │   │  Sparky ($110) + Hermes   │
+       │   Rent, Utilities, Auto   │   │  ($20) = $130/mo          │
+       └─────────────┬─────────────┘   └─────────────┬─────────────┘
+                     │                               │
+                     └───────────────┬───────────────┘
+                                     │
+                                     ▼
+                       ┌───────────────────────────┐
+                       │     NET DISCRETIONARY     │
+                       └─────────────┬─────────────┘
+                                     │
+                       ┌─────────────┴─────────────┐
+                       ▼                           ▼
+        ┌───────────────────────────┐ ┌───────────────────────────┐
+        │     70% CHECKING          │ │     30% FIREWALL & SEED   │
+        │ Daily Operating Number    │ │ $500 Buffer -> Swing Trade│
+        │ (Food, Gas, Incidentals)  │ │ & Covered Calls (M5)      │
+        └───────────────────────────┘ └───────────────────────────┘
+```
+
+**A. Operational Tech Expenses**
+- Sparky / OpenAI Suite: $110 / month
+- Hermes / Ollama / OpenClaw Membership: $20 / month
+- Base Infrastructure Cost: $130 / month
+
+**B. Personal & Business Capital Routing (70/30 Rule)**
+- Take-Home Income: Gross earnings adjusted for 21% estimated tax bite.
+- Monthly Nut: Rent, utilities, vehicle maintenance, groceries, and debt payments.
+- Discretionary Allocations:
+  - 70% Operating Pool: Serves as the Daily Number allowance for everyday expenses.
+  - 30% Growth Pool: Directs capital straight to the $500 Emergency Buffer, followed by capital seeding for swing trading and covered call strategies.
 
 ## Rules
 
