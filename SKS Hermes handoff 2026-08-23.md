@@ -28,3 +28,20 @@ Commit: c495e4b
 ## Next action / open question for Kirk
 - Confirm this handoff summary format (name + level of detail) is what you want, or point me at the exact template.
 - No blockers.
+
+---
+
+## Follow-up (same day — email / trade / skill sweep)
+
+### Email accounts
+- `kirkbradford0@gmail.com` — Gmail API token is REVOKED (`invalid_grant`). Re-auth flow started; auth URL sent to Kirk. This also blocks the 2h Gmail auto-sort cron until re-auth completes.
+- `kirkbradford1@icloud.com` — forwards into Gmail, so it's covered by the same token.
+- `kinloaslate@gmail.com` — SEPARATE account, never connected. Needs its own OAuth token (or forwarding) before Hermes can read it.
+
+### Trade lane (TwoAM)
+- Today's 02:00 MT run completed: `data/report.md`, `all_transactions.json`, `ledger.db` all fresh (2026-08-23).
+- Backtest: copy top-10 winners +1.4% excess vs SPY (copy-everyone -0.9%). 12 live candidates passed the gate.
+- `candidate-feed` → KinloaBot contract still PENDING (read-only, no execution).
+
+### Skill logged (daily discipline)
+- Created Hermes skill `sks-coordination` (category sks): repo handoff protocol, status-packet shape, Gmail access + re-auth flow, `uv run python` gotcha, TwoAM trade-lane access.
