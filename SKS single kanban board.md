@@ -1,6 +1,6 @@
 # SKS single kanban board
 
-Updated: 2026-08-23
+Updated: 2026-08-30
 
 Purpose: one board for Sparky/Codex, Hermes, GrokBot, AlphaBot, KinloaBot, FlowBot, and future agents. Do not create competing boards unless this file points to them.
 
@@ -284,6 +284,7 @@ Felons Melon is GO only when all of these are evidenced:
 | Create canonical build index | Sparky | Inventory | `SKS canonical build index 2026-08-18.md` |
 | Onboard FlowBot | Kirk + Sparky | Coordination / tools | `SKS FlowBot status packet.json` |
 | Consolidate FM code/assets final inventory | Grok / SKS | Felons Melon inventory | Drive `FelonsMelon_Code_Inventory_FINAL_Aug19_2026_DRAFT_EMAIL.md` |
+| Bootstrap FM WarBoard orchestration | Kirk + Sparky | Coordination | Drive folder `WarBoards - Sparky, Kirks caduceus for Hermes`; `FM-WARBOARD-RUN-001 — Hermes Orchestration Bootstrap — 2026-08-30` |
 
 ## Card Template
 
