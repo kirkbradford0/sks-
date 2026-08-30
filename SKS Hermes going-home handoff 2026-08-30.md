@@ -67,3 +67,12 @@ signed_by: Hermes
 next_smallest_action: git pull --ff-only then K3 blocker map on current source
 next_owner: Hermes
 ```
+
+
+## After Kirk left (same day, OfficeLeft still running)
+
+- SKS K3 map commit: `9d55a36b923285871108517c027d06a754d41c7c`
+- FM tree ff-only to `c8daaac` then branch `k3-launch-honesty` commit `366af5741e250a9fa6e81e91dbe6cd39d6affecf`
+- Honesty patch: free CTAs → `/interview`; unauth `/onboarding` → `/interview`; job board labeled SAMPLE
+- **Not on live site.** Live Vercel bundle still does not match `c8daaac`. `main` was not pushed. Auto-deploy not fired.
+- Home-Kirk: open PR https://github.com/kirkbradford0/felonsmelonkirkbradford0gmail/pull/new/k3-launch-honesty only after confirming Vercel source. Do not merge blindly.
