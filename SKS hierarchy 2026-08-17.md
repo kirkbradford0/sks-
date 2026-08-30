@@ -1,6 +1,6 @@
 # SKS hierarchy - 2026-08-17
 
-Purpose: current operating hierarchy for Felons Melon / SKS / Sparky and the agent swarm as of 2026-08-17.
+Purpose: dated operating-hierarchy snapshot for Felons Melon / SKS / Sparky and the agent swarm as of 2026-08-17. Its `Current Gaps` section is historical; current work lives in `SKS single kanban board.md`, with source precedence in `SKS repository governance 2026-08-30.md`.
 
 ## North Star
 

@@ -2,6 +2,8 @@
 
 Updated: 2026-08-17
 
+Status: compatibility snapshot. It may be stale and is not a second active queue. For current work use `SKS single kanban board.md`; for source precedence use `SKS repository governance 2026-08-30.md`.
+
 Purpose: one-screen roster for the current swarm so chat can stay focused on decisions and build work.
 
 ## Glance Board

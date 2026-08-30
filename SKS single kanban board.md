@@ -4,6 +4,8 @@ Updated: 2026-08-30
 
 Purpose: one board for Sparky/Codex, Hermes, GrokBot, AlphaBot, KinloaBot, FlowBot, and future agents. Do not create competing boards unless this file points to them.
 
+Repository governance and source precedence: `SKS repository governance 2026-08-30.md`
+
 Canonical project map: `SKS canonical build index 2026-08-18.md`
 
 ## Command & Life Map Schema (Strike Force Playbook)

@@ -2,7 +2,7 @@
 
 Purpose: one canonical inventory of known projects, source artifacts, and cannibalizable work across SKS, GitHub, Google Drive, Lovable, and Codex project space.
 
-This file is the map. The active work queue lives in `SKS single kanban board.md`.
+This file is the map. The active work queue lives in `SKS single kanban board.md`. Source precedence and compatibility rules live in `SKS repository governance 2026-08-30.md`.
 
 ## Operating Lanes
 
