@@ -8,6 +8,8 @@
 - Replaced the ambiguous README with a canonical start order.
 - Hardened `AGENT_STATUS_PACKET.md` around the core keys: agent, status, owns, interfaces, needs, blockers, next.
 - Marked the integration board and hierarchy as dated compatibility snapshots; removed no files.
+- Implemented `SKS Snowball execution contract.md`, linked it from the canonical board and README, and set `kanban.max_in_progress = 3`.
+- Verified only the `default` Hermes profile exists; Alpha/Bravo/Charlie independent certification is therefore blocked rather than simulated.
 
 ## Commit SHA
 
@@ -31,6 +33,15 @@
 - Stage named files so unrelated agent artifacts are not swept into commits.
 - End every Hermes session with a dated handoff, push it, and verify the remote SHA.
 
+## Sparky charter addendum — Kanban `t_e9470908`
+
+- Created `SKS Sparky orchestrator charter 2026-08-30.md`.
+- Defined Sparky as planner and evaluator, with no silent authority for external or irreversible actions.
+- Added complete Sparky → Hermes handoff, Hermes closeout, and final Patriarch review schemas.
+- Checked official OpenAI pricing: Free $0, Go $8, Plus $20, Pro from $100; API usage is separate and metered.
+- Did not treat the board's `$110/month` as fact. Actual subscription and API spend remain `UNKNOWN`: the Gmail OAuth token is revoked, no local invoice was found, and no logged-in billing dashboard was available.
+- Validation result: 11/11 charter acceptance checks passed.
+
 ## Next action for Kirk
 
-- The downstream private-skills audit can now use this source precedence and status-packet contract without treating old glance-board claims as live state.
+- Restore billing evidence (latest OpenAI receipt or logged-in plan and API Usage dashboard) so the dependent budget card can replace `UNKNOWN` with actual fixed and variable costs.
