@@ -29,7 +29,7 @@ No FM application code was changed this session.
 ## Iron rules
 
 1. Verify → save to SKS → verify the remote SHA. An interrupt is not a completion.
-2. No FM code mutation, deploy, Stripe live charge, or schema change until Kirk names the canonical working tree and clears the card.
+2. No FM code mutation, deploy, Stripe live charge, or schema change until the locked tree is fast-forwarded to origin/main. Kirk locked K2 2026-08-30 ("Do it") while leaving the shop.
 3. WIP = 3. One card in progress. One successor per PASS.
 4. Kirk clicks Post, pays, deploys, and final-submits. Hermes does everything up to that click.
 5. Trusted-person monthly packet (PO / case worker / DCFS) is SHELVED until the app actually works.
@@ -42,7 +42,7 @@ Cards are sequential. Do not start a later card while an earlier one is BLOCKED.
 ### K1 — Verify the live customer path
 Lane: FM BUILD / QA
 Owner: Hermes
-Status: EVIDENCE STARTED 2026-08-30; not closed
+Status: EVIDENCE SAVED 2026-08-30 — result FAIL (honesty + unproven jobs). Closed as recon.
 Do:
 - Walk homepage → letter → resume → jobs → signup → pricing → checkout gate.
 - Record every broken CTA, auth surprise, empty job board, and false claim.
@@ -53,16 +53,19 @@ Successor: K2 if path is coherent; K3 if launch blockers are named.
 ### K2 — Lock one canonical production tree
 Lane: FM BUILD
 Owner: Kirk + Hermes
-Status: BLOCKED
-Blocker: bootstrap path `C:\Users\kirkb\felons-melon\felonsmelonkirkbradford0gmail` is not on this shop PC. Duplicate trees exist (`felonsmelon-dev`, `felons-melon-app`, `felonsmelon-appwrite-migration`, zip archives).
-Do: Kirk names the production GitHub repo + branch + local folder. Hermes records it on the board. Freeze duplicates.
-Success: one repo, one branch, one local path written on `SKS single kanban board.md`.
-No code until this card PASSES.
+Status: PASS 2026-08-30 — Kirk "Do it" while leaving shop
+Locked:
+- Repo: `kirkbradford0/felonsmelonkirkbradford0gmail`
+- Branch: `main`
+- Local: `C:\Users\bradf\Documents\Codex\felonsmelon-dev`
+- Live: `https://www.felonsmelon.com/`
+Working-tree sync at lock: local `efa4f67` was 126 commits behind origin `c8daaac`. Fast-forward required before K3 edits.
+Duplicates stay frozen: `felons-melon-app`, `felonsmelon-appwrite-migration`, zip archives, missing `C:\Users\kirkb\...` path.
 
 ### K3 — Fix only launch-blocking bugs
 Lane: FM BUILD
-Owner: Codex (primary), Hermes verifies
-Status: QUEUED behind K1 evidence + K2 tree lock
+Owner: Hermes (shop empty; Codex optional later)
+Status: ACTIVE after ff-only pull of locked tree
 In scope: Stripe trial checkout after sign-in, webhook completion, guest vs signup honesty, job-board empty state, dead CTAs.
 Out of scope: new modules, trusted-person routing, kiosk, marketing site rebuilds.
 Success: named bugs have before/after evidence on the live URL.

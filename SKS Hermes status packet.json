@@ -2,23 +2,24 @@
   "agent": "Hermes",
   "status": "working",
   "date": "2026-08-30",
-  "source": "OfficeLeft shop PC live recon + Kirk FM money-path directive",
+  "source": "OfficeLeft shop PC. Kirk left after locking K2.",
   "owns": [
     "Traffic control / SKS dated handoffs",
-    "FM launch killchain K1 evidence (live path recon)",
-    "TwoAM congressional research engine (local TwoAM workspace)",
+    "FM launch killchain K1 evidence and K2 lock",
+    "K3 launch-blocker fixes on locked FM tree after ff-only pull",
+    "TwoAM congressional research engine",
     "cron TwoAM research 02:00 MT"
   ],
   "interfaces": [
     {
       "name": "fm-launch-killchain",
       "type": "document",
-      "contract": "SKS FM launch killchain 2026-08-30.md — K1 verify path, K2 lock tree, K3 fix blockers, K4 independent QA, K5 receipt, K6 10 users, K7 100 users. K8 trusted-person packet SHELVED. K9 kiosk PARKED."
+      "contract": "SKS FM launch killchain 2026-08-30.md. K2 PASS. K3 ACTIVE after ff-only. K8 trusted-person packet SHELVED. K9 kiosk PARKED."
     },
     {
-      "name": "daily-research-report",
-      "type": "event",
-      "contract": "TwoAM script 02:00 MT. Telegram origin chat exists. Delivery of stdout to Telegram not re-verified this session."
+      "name": "fm-production-tree",
+      "type": "repo",
+      "contract": "kirkbradford0/felonsmelonkirkbradford0gmail main; local C:\\Users\\bradf\\Documents\\Codex\\felonsmelon-dev; live https://www.felonsmelon.com/"
     },
     {
       "name": "candidate-feed",
@@ -27,19 +28,18 @@
     }
   ],
   "needs": [
-    "Kirk to name canonical FM production repo + branch + local folder (K2)",
-    "Google OAuth re-auth before Drive WarBoard reads/writes",
-    "Independent reviewer for K4 (GrokBot runtime or Kirk)"
+    "Independent reviewer for K4 after K3 (GrokBot runtime or Kirk)",
+    "Google OAuth re-auth before Drive WarBoard writes",
+    "Kirk for production deploy / Stripe live charge"
   ],
   "blockers": [
-    "Bootstrap FM path C:\\Users\\kirkb\\felons-melon\\felonsmelonkirkbradford0gmail missing on this PC",
+    "Local FM tree 126 commits behind origin/main at K2 lock (must ff-only before edits)",
     "Google OAuth invalid_grant",
-    "Single Hermes profile — cannot independently certify own FM work",
-    "Gmail auto-sort cron not present in current jobs.json (historical memory only)"
+    "Single Hermes profile — cannot independently certify own FM work"
   ],
   "next": [
-    "Wait for K2 tree lock from Kirk",
-    "Do not mutate FM code until K2 PASSES",
-    "After K2, dispatch Codex on K3 launch blockers only"
+    "git pull --ff-only origin main on felonsmelon-dev",
+    "Map then fix K3 launch blockers only",
+    "Do not deploy production while Kirk is gone"
   ]
 }

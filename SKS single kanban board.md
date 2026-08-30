@@ -216,12 +216,12 @@ SCOUT       INTAKE      SCORE       RESEARCH    ROUTER      PRODUCTION  VERIFICA
 
 ### NOW
 
-WIP governor: max 3. Killchain source: `SKS FM launch killchain 2026-08-30.md`. Money path: FM+ $19.99/mo. No FM code mutation until K2 names the production tree.
+WIP governor: max 3. Killchain source: `SKS FM launch killchain 2026-08-30.md`. Money path: FM+ $19.99/mo. K2 locked. Kirk left the shop — continue on OfficeLeft.
 
 | Card | Owner | Lane | Evidence | Next Action |
 |---|---|---|---|---|
-| K1 Verify live FM customer path | Hermes | Felons Melon QA | `SKS FM K1 live path evidence 2026-08-30.md` | Evidence saved: homepage live, checkout 401 sign-in required, onboarding is signup not guest letter, job board unproven. Result FAIL. No more recon unless Kirk asks. Waiting on K2 |
-| K2 Lock one canonical FM production repo + branch | Kirk + Hermes | Felons Melon deployment | Killchain K2; local tree `felonsmelon-dev` last commit 2026-06-09; bootstrap path `C:\Users\kirkb\...` MISSING on this PC | Kirk names production GitHub repo + branch + local folder. Hermes records it here. Freeze duplicates. No code until this PASSES |
+| K3 Fix only launch-blocking bugs | Hermes | Felons Melon hardening | Killchain K3; going-home handoff; tree 126 behind origin `c8daaac` | ff-only pull locked tree, then fix honesty/onboarding, job-board empty state, webhook/checkout. No deploy, no charges, no new features |
+| K2 Lock one canonical FM production repo + branch | Kirk + Hermes | Felons Melon deployment | Kirk "Do it" 2026-08-30; `kirkbradford0/felonsmelonkirkbradford0gmail` `main`; local `C:\Users\bradf\Documents\Codex\felonsmelon-dev`; live `https://www.felonsmelon.com/` | PASS. Fast-forward local (126 behind) before edits. Duplicates frozen |
 | Protect daily income lane | Kirk + Sparky | Cash / job survival | `SKS project map 2026-08-19.md`; `job-hunt/` | Kirk runs applications/interviews first; Sparky handles tailoring, research, tracker updates, and follow-up support |
 
 ### FINAL FM RELEASE GATE
@@ -303,6 +303,8 @@ Felons Melon is GO only when all of these are evidenced:
 | Consolidate FM code/assets final inventory | Grok / SKS | Felons Melon inventory | Drive `FelonsMelon_Code_Inventory_FINAL_Aug19_2026_DRAFT_EMAIL.md` |
 | Bootstrap FM WarBoard orchestration | Kirk + Sparky | Coordination | Drive folder `WarBoards - Sparky, Kirks caduceus for Hermes`; `FM-WARBOARD-RUN-001 — Hermes Orchestration Bootstrap — 2026-08-30` |
 | Write FM launch killchain + K1 live evidence | Hermes | Felons Melon QA | `SKS FM launch killchain 2026-08-30.md`; `SKS FM K1 live path evidence 2026-08-30.md`; board NOW collapsed to 3 |
+| K1 Verify live FM customer path | Hermes | Felons Melon QA | `SKS FM K1 live path evidence 2026-08-30.md` — FAIL honesty + unproven jobs |
+| K2 Lock canonical FM tree | Kirk + Hermes | Felons Melon deployment | Kirk "Do it" 2026-08-30; `felonsmelonkirkbradford0gmail` main; going-home handoff |
 
 ## Card Template
 
