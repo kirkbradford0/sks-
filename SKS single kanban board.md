@@ -8,6 +8,10 @@ Repository governance and source precedence: `SKS repository governance 2026-08-
 
 Canonical project map: `SKS canonical build index 2026-08-18.md`
 
+Snowball worker contract: `SKS Snowball execution contract.md`
+
+Hermes execution cockpit: Kanban board `snowball-command`. `ACTIVE` means status `running`; `ready` and `todo` are queued. Global WIP governor: `kanban.max_in_progress = 3`.
+
 ## Command & Life Map Schema (Strike Force Playbook)
 
 Status: ACTIVE — inserted 2026-08-23 per Kirk (H.I.L. Governor) directive. This is the command hierarchy, project portfolio, cost model, and reasoning pipeline for the SKS strike team. Treat it as canonical doctrine until Kirk revises it.
@@ -197,6 +201,9 @@ SCOUT       INTAKE      SCORE       RESEARCH    ROUTER      PRODUCTION  VERIFICA
 
 - One card = one outcome.
 - Every card has an owner, lane, evidence link, and next action.
+- Every dispatched Hermes worker starts with `kanban_show()` and returns the exact Snowball Closeout in `SKS Snowball execution contract.md`.
+- A completed card may propose exactly one bounded successor. No successor becomes ACTIVE when three cards are already `running`.
+- VERIFY → CERTIFY → NAME → SIGN → NEXT CARD. An actor may not independently certify its own work.
 - Chat is for decisions. This board is for state.
 - Felons Melon is the compass, not fog. Mention it when values or users matter; do not let it blur cash/app execution.
 - Do not publish secrets, tokens, private machine identifiers, or unnecessary local paths.
@@ -209,18 +216,13 @@ SCOUT       INTAKE      SCORE       RESEARCH    ROUTER      PRODUCTION  VERIFICA
 
 ### NOW
 
+WIP governor: max 3. Killchain source: `SKS FM launch killchain 2026-08-30.md`. Money path: FM+ $19.99/mo. No FM code mutation until K2 names the production tree.
+
 | Card | Owner | Lane | Evidence | Next Action |
 |---|---|---|---|---|
+| K1 Verify live FM customer path | Hermes | Felons Melon QA | `SKS FM K1 live path evidence 2026-08-30.md` | Evidence saved: homepage live, checkout 401 sign-in required, onboarding is signup not guest letter, job board unproven. Result FAIL. No more recon unless Kirk asks. Waiting on K2 |
+| K2 Lock one canonical FM production repo + branch | Kirk + Hermes | Felons Melon deployment | Killchain K2; local tree `felonsmelon-dev` last commit 2026-06-09; bootstrap path `C:\Users\kirkb\...` MISSING on this PC | Kirk names production GitHub repo + branch + local folder. Hermes records it here. Freeze duplicates. No code until this PASSES |
 | Protect daily income lane | Kirk + Sparky | Cash / job survival | `SKS project map 2026-08-19.md`; `job-hunt/` | Kirk runs applications/interviews first; Sparky handles tailoring, research, tracker updates, and follow-up support |
-| Verify active agent runtimes | Sparky + Hermes | Coordination | agent status packets; current SKS board | Confirm which agents actually have a live runtime/session that can read SKS; mark inactive agents as waiting instead of pretending they are working |
-| Lock one canonical FM production repo + branch | Sparky/Codex | Felons Melon deployment | Drive `FelonsMelon_Code_Inventory_FINAL_Aug19_2026_DRAFT_EMAIL.md`; `SKS canonical build index 2026-08-18.md` | Choose the production repo/branch, record it here, freeze duplicate build paths, and create a rollback tag/commit before changes |
-| Finish FM landing + domain release path | AlphaBot + Codex | Felons Melon deployment | `kirkbradford0/Idea-Repo-123-` branch `claude/rebuild-fm-landing-5jxdV` | Reuse the strongest Hero/CTA/FMScore/HowItWorks components, remove dead links/placeholders, verify responsive layout, then produce a deployable preview |
-| Verify Supabase/auth/data boundaries | Codex + Sparky | Felons Melon hardening | FM NOW master; existing Supabase integration | Verify required env vars, auth/guest behavior, RLS, proof/check-in writes, and failure handling using redacted evidence only; do not expose service keys in SKS |
-| Run production smoke test | Browser Harness + Sparky | Felons Melon QA | live/preview URL after deploy candidate exists | Test desktop + mobile landing, navigation, CTA, signup/guest entry, form validation, 404s, refresh/deep links, and obvious console/network failures |
-| Run independent public-copy/link QA | GrokBot | Felons Melon QA | deploy candidate + Aug 19 inventory | Check public claims, spelling, metadata, title/description, broken links, contact paths, and whether every major CTA leads somewhere real; return only evidence-backed fixes |
-| Enforce security/privacy release gate | Sparky + Codex reviewer split | Felons Melon hardening | FM NOW master G14-G15 rules; `03_HARDENING_PROMPT — Secure, Stabilize, and Release` | Confirm no secrets/private records in client bundle, logs, GitHub, analytics, or public error output; builder and reviewer must be distinct on high-risk changes |
-| Create release receipt + rollback play | FlowBot + Sparky | Felons Melon release | results from build, QA, auth, privacy, and deploy checks | Produce one go/no-go record containing commit, deployed target, checks passed/failed, blockers, owner, and exact rollback point |
-| Freeze non-job/non-FM build expansion for this push | Sparky | Coordination | user directive 2026-08-20 | Keep trading, AutoFlow expansion, archive mining, and new FM features out of NOW until job hunt block and FM release gate are complete |
 
 ### FINAL FM RELEASE GATE
 
@@ -243,8 +245,19 @@ Felons Melon is GO only when all of these are evidenced:
 
 | Card | Owner | Lane | Evidence | Next Action |
 |---|---|---|---|---|
+| K3 Fix only launch-blocking bugs | Codex + Hermes verify | Felons Melon hardening | Killchain K3; live checkout 401-auth-gate; DEPLOYMENT.md webhook placeholder | After K1 evidence + K2 tree lock: Stripe trial after sign-in, webhook completion, guest vs signup honesty, job-board empty state, dead CTAs. No new features |
+| K4 Independent public QA | GrokBot or Kirk | Felons Melon QA | Killchain K4 | After K3: copy, metadata, every major CTA, mobile + desktop. Hermes may not certify its own work |
+| K5 Release receipt + rollback | FlowBot + Sparky | Felons Melon release | Killchain K5 | After K4: one go/no-go record with commit, URL, checks, rollback point |
+| K6 First 10 real users | Kirk + Hermes | Felons Melon growth | Killchain K6 | After K5: 10 people who complete letter → resume → job match without Kirk standing over them |
+| K7 First 100 users | Kirk + Hermes | Felons Melon growth | Killchain K7; kanban `fm-growth` | After K6: evidence-backed posts to the live working path. Kirk clicks Post |
+| Finish FM landing + domain release path | AlphaBot + Codex | Felons Melon deployment | `kirkbradford0/Idea-Repo-123-` branch `claude/rebuild-fm-landing-5jxdV` | Fold into K3 only if K1 proves landing is still a launch blocker |
+| Verify Supabase/auth/data boundaries | Codex + Sparky | Felons Melon hardening | FM NOW master; existing Supabase integration | Fold into K3 after K2. Redacted evidence only; do not expose service keys in SKS |
+| Run production smoke test | Browser Harness + Sparky | Felons Melon QA | live URL `https://www.felonsmelon.com/` | Fold into K1/K4. Desktop + mobile, CTA, signup/guest, 404s, refresh/deep links |
+| Enforce security/privacy release gate | Sparky + Codex reviewer split | Felons Melon hardening | FM NOW master G14-G15 | Fold into K4/K5. Builder and reviewer must be distinct |
+| Verify active agent runtimes | Sparky + Hermes | Coordination | agent status packets; current SKS board | Confirm live runtime before treating an agent as working |
+| Freeze non-job/non-FM build expansion for this push | Sparky | Coordination | user directive 2026-08-20; killchain 2026-08-30 | Keep trading, AutoFlow, kiosk, trusted-person packet, and new FM features out of NOW until K5 PASSES |
 | FM core module port after release | Sparky/AlphaBot | Felons Melon product | GitHub `Felon-s-Melon-2.0` | After landing/release is stable and Kirk reopens scope, extract only the highest-value check-in/craving/mentor flows into the canonical app |
-| Run FM article traffic lane | Hermes + GrokBot + Sparky | Felons Melon marketing | `kirkbradford0/sks-skills`; `SKS Hermes article pipeline built 2026-08-18.md` | After release gate passes, produce evidence-backed posts that point to the live FM experience; Kirk handles final public post action |
+| Run FM article traffic lane | Hermes + GrokBot + Sparky | Felons Melon marketing | `kirkbradford0/sks-skills`; `SKS Hermes article pipeline built 2026-08-18.md` | After K5, produce evidence-backed posts that point to the live FM experience; Kirk handles final public post action |
 | Update job tracker | Kirk + Sparky | Cash / job survival | Employment Engine Run Drive docs | Log applications, statuses, follow-ups, and next-contact dates |
 | AutoFlow paid pilot cut | Sparky + Kirk | Shippable app / cash | Lovable `AutoFlow Solutions`, `Pocket Work Order Pro` | Resume only after the current job-hunt + FM deployment push |
 | Consolidate AutoFlow + KAS Lite | AlphaBot/Sparky | Auto shop tools | Lovable project inventory | Resume only after the current job-hunt + FM deployment push |
@@ -261,6 +274,8 @@ Felons Melon is GO only when all of these are evidenced:
 | Judge's Advocate monetization | Sparky/Kirk | Small utility | Lovable `felonsbestfriend` | Decide whether to sell/free as FM gadget after release |
 | Market Terrain Map cannibalization | Hermes/Sparky | Trading research | Lovable `Market Terrain Map` | Pull evidence-led UI concepts into TwoAM only if useful later |
 | Memory House review | Sparky | Memory/tools | Lovable `seemyfiles` | Cannibalize visual memory metaphor later |
+| K8 Trusted-person monthly packet | unassigned | Felons Melon product | Killchain K8 | SHELVED until K5 PASS. User sends recovery/proof monthly to PO / case worker / DCFS. Do not design yet |
+| K9 Auto kiosk next app | AlphaBot / later | Auto shop tools | Killchain K9; `bradfordautosolutionscheckin.lovable.app` | PARKED until FM works. Do not start this chain |
 
 ### WAITING / BLOCKED
 
@@ -287,6 +302,7 @@ Felons Melon is GO only when all of these are evidenced:
 | Onboard FlowBot | Kirk + Sparky | Coordination / tools | `SKS FlowBot status packet.json` |
 | Consolidate FM code/assets final inventory | Grok / SKS | Felons Melon inventory | Drive `FelonsMelon_Code_Inventory_FINAL_Aug19_2026_DRAFT_EMAIL.md` |
 | Bootstrap FM WarBoard orchestration | Kirk + Sparky | Coordination | Drive folder `WarBoards - Sparky, Kirks caduceus for Hermes`; `FM-WARBOARD-RUN-001 — Hermes Orchestration Bootstrap — 2026-08-30` |
+| Write FM launch killchain + K1 live evidence | Hermes | Felons Melon QA | `SKS FM launch killchain 2026-08-30.md`; `SKS FM K1 live path evidence 2026-08-30.md`; board NOW collapsed to 3 |
 
 ## Card Template
 

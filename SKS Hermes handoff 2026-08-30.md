@@ -1,47 +1,55 @@
 # SKS Hermes handoff — 2026-08-30
 
+Session 2 (shop PC OfficeLeft). Earlier session 1 governance/charter handoff is superseded by this file, not deleted from git history.
+
 ## What I did
 
-- Recorded the canonical FM WarBoard folder and exact RUN-001 title; preserved the inaccessible run as a signed `BLOCKED` receipt rather than guessing.
-- Audited `kirkbradford0/sks-`: verified HTTPS remote, `main`/`origin/main`, clean sync before this audit, and Git Credential Manager authentication.
-- Added `SKS repository governance 2026-08-30.md` with explicit source precedence, JSON protocol, stale-source findings, hygiene, and session-close rules.
-- Replaced the ambiguous README with a canonical start order.
-- Hardened `AGENT_STATUS_PACKET.md` around the core keys: agent, status, owns, interfaces, needs, blockers, next.
-- Marked the integration board and hierarchy as dated compatibility snapshots; removed no files.
-- Implemented `SKS Snowball execution contract.md`, linked it from the canonical board and README, and set `kanban.max_in_progress = 3`.
-- Verified only the `default` Hermes profile exists; Alpha/Bravo/Charlie independent certification is therefore blocked rather than simulated.
+- Received Kirk: finish Felons Melon, make money, first 100 users, then auto kiosk. Money path confirmed as FM+ $19.99/mo. Trusted-person monthly packet (PO/DCFS/case worker) is desired later, not this push.
+- Received Traffic Control bootstrap. Inspected only. No FM code mutation.
+- Verified live site `https://www.felonsmelon.com/` (Vercel 200). Stripe `POST /api/stripe/checkout` returns 401 account-required for `fm_plus`. Homepage free-letter claim conflicts with `/onboarding` signup wall.
+- Wrote `SKS FM launch killchain 2026-08-30.md` (K1–K9).
+- Wrote `SKS FM K1 live path evidence 2026-08-30.md`.
+- Collapsed canonical board NOW to 3 cards: K1, K2, daily income.
+- Did not write Google Drive (OAuth token revoked `invalid_grant`).
+- Did not start Codex on FM. Canonical tree from bootstrap is missing on this PC.
 
 ## Commit SHA
 
-- Governance audit: `dcb4e55f1cd6a6bd477648fa19b32decac6ff3da`
-- This handoff: see the next repository commit.
+- See the repository commit that contains this file.
 
 ## State
 
-- Canonical active queue: `SKS single kanban board.md`.
-- Canonical inventory: `SKS canonical build index 2026-08-18.md` until the board links a newer replacement.
-- All 3 tracked JSON status packets parse successfully.
-- Existing Hermes, GrokBot, and FlowBot packets are valid but dated; historical `working` and blocker claims are not runtime proof.
-- `SKS integration board.md`, `SKS hierarchy 2026-08-17.md`, and old status claims were identified as stale/duplicative snapshots, not deleted.
-- `gh` has no separate login, but plain Git uses Windows Credential Manager and remote read access succeeded.
-- Untracked `FM-20260830-0001-HANDOFF-TO-HERMES.md` was preserved and excluded from the audit commits because it predates this session's changes.
+- Live FM: up. Money button exists. Guest checkout blocked by design (sign-in required).
+- Local FM tree: `C:\Users\bradf\Documents\Codex\felonsmelon-dev` remote `kirkbradford0/felonsmelonkirkbradford0gmail`, last commit `efa4f67` 2026-06-09. Not proven to be the live Vercel source.
+- Bootstrap canonical path `C:\Users\kirkb\felons-melon\felonsmelonkirkbradford0gmail`: MISSING.
+- Google Drive WarBoard: BLOCKED (`invalid_grant`).
+- Telegram gateway: connected. Bot getMe ok, username ScoutLimabot / display Alpha. Home DM 8834935462.
+- Cron on this Hermes: TwoAM research only (02:00 MT, last ok). Gmail auto-sort job is NOT in current `cron/jobs.json`.
+- Hermes doctor: v0.20.6, Nous Portal logged in, config version 32 vs 39, 329 commits behind. Profiles: default only.
+- Independent Alpha/Bravo/Charlie certification: still blocked (single profile).
 
 ## Process fix
 
-- Read governance, then the single board, then the canonical index, packets, and contracts.
-- A board assignment is not proof an agent is running; use dated evidence and live verification.
-- Stage named files so unrelated agent artifacts are not swept into commits.
-- End every Hermes session with a dated handoff, push it, and verify the remote SHA.
-
-## Sparky charter addendum — Kanban `t_e9470908`
-
-- Created `SKS Sparky orchestrator charter 2026-08-30.md`.
-- Defined Sparky as planner and evaluator, with no silent authority for external or irreversible actions.
-- Added complete Sparky → Hermes handoff, Hermes closeout, and final Patriarch review schemas.
-- Checked official OpenAI pricing: Free $0, Go $8, Plus $20, Pro from $100; API usage is separate and metered.
-- Did not treat the board's `$110/month` as fact. Actual subscription and API spend remain `UNKNOWN`: the Gmail OAuth token is revoked, no local invoice was found, and no logged-in billing dashboard was available.
-- Validation result: 11/11 charter acceptance checks passed.
+- Interrupt is not completion. Save to SKS, push, verify remote SHA.
+- Do not mutate FM until K2 names the tree.
+- Drive writes wait on re-auth. SKS git is the durable passoff until then.
 
 ## Next action for Kirk
 
-- Restore billing evidence (latest OpenAI receipt or logged-in plan and API Usage dashboard) so the dependent budget card can replace `UNKNOWN` with actual fixed and variable costs.
+1. Name the production FM working tree (repo + branch + local folder), or confirm the recommended default in the killchain.
+2. Stay out of the way on K3 only after that answer.
+3. Optional later: restore Google OAuth so WarBoard/Drive mirrors exist.
+
+```yaml
+card: K1
+target: https://www.felonsmelon.com/
+action_taken: live path recon; killchain written; board NOW collapsed to 3
+evidence: SKS FM launch killchain 2026-08-30.md; SKS FM K1 live path evidence 2026-08-30.md
+verification: HTTP 200 homepage; POST /api/stripe/checkout 401 requiresSignIn; /onboarding is signup not guest letter
+result: FAIL
+artifact_created: killchain + K1 evidence + this handoff
+artifact_location: kirkbradford0/sks- main
+signed_by: Hermes (observer; not independent certifier)
+next_smallest_action: Kirk names canonical FM repo/branch/local path (K2)
+next_owner: Kirk
+```
