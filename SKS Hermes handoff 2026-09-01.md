@@ -1,7 +1,7 @@
 # SKS Hermes handoff 2026-09-01
 
 ## What I did
-Google Drive re-auth succeeded (kirkbradford0@gmail.com). Sorted My Drive **root** into buckets. Did **not** finish nested Current/Archived/Future (those stay as existing trees).
+Google Drive re-auth succeeded (kirkbradford0@gmail.com). Sorted My Drive into buckets. Nested Current / Archived / Future contents were moved into those buckets; empty shells went to Drive trash.
 
 Buckets created at My Drive root:
 - Usable
@@ -20,11 +20,12 @@ Parked for **after** nested cleanup (Kirk: implement then):
 (this file)
 
 ## State
-- Root is clean: 11 folders, 0 loose files.
-- Inventory of whole Drive was ~133k items, almost all laptop/code dump (js/node_modules/.next). Real human tree is Current (~1.2k), Archived (~640), Future (~366), WarBoards (33).
-- Quarantine of remaining `src`/`validators` folders was still running when this handoff was written (~80 of 200 moved).
+- Root now: Felons Melon Keep, Kirks Personal, Kirks Physical and Mental Health, Usable, Quarantined, WarBoards, Hermes Bay Area Bridge, RatherWait Negotiations. Zero loose files.
+- Current / Archived / Future emptied into buckets, then trashed (reversible).
+- Inventory of whole Drive was ~133k items, almost all laptop/code dump. 244 junk trees (node_modules/.next/.git/.github/.vercel/.cache) trashed.
+- Quarantine of remaining `src`/`validators` still running in background when this was updated (~140 of 200 src folders moved).
 - `My Laptop` and `USB and External Devices` are Computers-backup style (no normal parent) — move failed; leave them or trash later.
-- Journalism/school false positives (IntroPsych, therapy articles, Laurie hospital letter, WGU advisor pics) pulled out of Health into Usable.
+- Journalism/school false positives (IntroPsych, therapy articles, Laurie hospital letter, WGU advisor pics) live in Usable, not Health.
 
 ## Process fix
 Do not move root **folders** named Archived/Current/Future — only files. Moving Current under Usable caused a Drive 503/timeout on restore (Current was restored; Future restored later).
