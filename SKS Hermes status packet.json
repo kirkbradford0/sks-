@@ -1,45 +1,42 @@
 {
   "agent": "Hermes",
   "status": "working",
-  "date": "2026-08-30",
-  "source": "OfficeLeft shop PC. Kirk left after locking K2.",
+  "date": "2026-09-02",
+  "source": "OfficeLeft shop PC. USDE paper desk stood up.",
   "owns": [
     "Traffic control / SKS dated handoffs",
-    "FM launch killchain K1 evidence and K2 lock",
-    "K3 launch-blocker fixes on locked FM tree after ff-only pull",
     "TwoAM congressional research engine",
-    "cron TwoAM research 02:00 MT"
+    "cron TwoAM research 02:00 MT",
+    "USDE $100 paper seesaw desk (broker locked)"
   ],
   "interfaces": [
     {
-      "name": "fm-launch-killchain",
-      "type": "document",
-      "contract": "SKS FM launch killchain 2026-08-30.md. K2 PASS. K3 ACTIVE after ff-only. K8 trusted-person packet SHELVED. K9 kiosk PARKED."
-    },
-    {
-      "name": "fm-production-tree",
-      "type": "repo",
-      "contract": "kirkbradford0/felonsmelonkirkbradford0gmail main; local C:\\Users\\bradf\\Documents\\Codex\\felonsmelon-dev; live https://www.felonsmelon.com/"
+      "name": "usde-paper-desk",
+      "type": "data_model",
+      "contract": "Paper only. $100 cash, USDE equity, 5m Bollinger seesaw, fees 0. Live blocked until UNLOCK.txt first line UNLOCK."
     },
     {
       "name": "candidate-feed",
       "type": "api",
-      "contract": "PENDING — not wired. Deprioritized until FM K5."
+      "contract": "PENDING — not wired. TwoAM still read-only."
+    },
+    {
+      "name": "public-com-broker",
+      "type": "api",
+      "contract": "LOCKED. PublicDotCom/publicdotcom-py is the live path after Kirk writes UNLOCK."
     }
   ],
   "needs": [
-    "Independent reviewer for K4 after K3 (GrokBot runtime or Kirk)",
-    "Google OAuth re-auth before Drive WarBoard writes",
-    "Kirk for production deploy / Stripe live charge"
+    "Kirk written UNLOCK before any live Public.com order",
+    "Public API key from Account Settings > Security > API if live is wanted"
   ],
   "blockers": [
-    "Local FM tree 126 commits behind origin/main at K2 lock (must ff-only before edits)",
-    "Google OAuth invalid_grant",
-    "Single Hermes profile — cannot independently certify own FM work"
+    "No UNLOCK.txt",
+    "Look-ahead: 5m +$30 was squeeze week, not a guaranteed 20% machine"
   ],
   "next": [
-    "git pull --ff-only origin main on felonsmelon-dev",
-    "Map then fix K3 launch blockers only",
-    "Do not deploy production while Kirk is gone"
+    "Keep paper ticks on cron",
+    "Do not place live USDE orders",
+    "Report P&L vs +$20 target from the paper ledger"
   ]
 }
