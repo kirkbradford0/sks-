@@ -1,25 +1,30 @@
 {
   "agent": "Hermes",
-  "status": "idle",
-  "date": "2026-09-02",
-  "source": "OfficeLeft shop PC. Session closeout for new Hermes session.",
+  "status": "jobs-desk",
+  "date": "2026-09-04",
+  "source": "OfficeLeft shop PC. Motley Fool packet ready; Concentric junior OSINT dead.",
   "owns": [
     "Traffic control / SKS dated handoffs",
     "TwoAM congressional research engine",
     "cron TwoAM research 02:00 MT",
     "USDE $100 paper seesaw desk (broker locked)",
-    "Live USDE book levels are Kirk's — Hermes coaches, does not execute"
+    "Job-search packet desk (Fool tonight)"
   ],
   "interfaces": [
+    {
+      "name": "motley-fool-ai-writer",
+      "type": "application",
+      "contract": "Greenhouse 5202271007. Packet ready. Kirk submits. Hermes does not click Submit."
+    },
+    {
+      "name": "concentric-junior-osint",
+      "type": "application",
+      "contract": "DEAD. Do not apply. Watch Advisors board for junior/remote reopen."
+    },
     {
       "name": "usde-live-book",
       "type": "data_model",
       "contract": "Kirk: 100 sh USDE @ 8.29. Stop 8.04. Clip 50 @ 8.54. Ladder 8.37 then 8.20. No add."
-    },
-    {
-      "name": "usde-paper-desk",
-      "type": "data_model",
-      "contract": "Paper only. $100, 5m Bollinger, fees 0. Cron 3296ed6bac89. Live blocked until UNLOCK.txt."
     },
     {
       "name": "public-com-broker",
@@ -29,11 +34,11 @@
   ],
   "needs": [],
   "blockers": [
-    "No UNLOCK.txt for live API"
+    "Fool application waiting on Kirk Submit click"
   ],
   "next": [
-    "New session honors 3% rule on live 100",
-    "Paper cron keeps ticking",
-    "Do not place live orders"
+    "Kirk submits Fool packet",
+    "On 'Fool submitted' mark ledger Applied and start Day 1-2 follow-up",
+    "Do not resurrect Concentric junior OSINT"
   ]
 }
