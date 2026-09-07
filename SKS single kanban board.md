@@ -6,6 +6,8 @@ Purpose: one board for Sparky/Codex, Hermes, GrokBot, AlphaBot, KinloaBot, FlowB
 
 Fleet identity + runtime proof (who is actually alive, which Telegram bot): `SKS fleet roster 2026-09-07.md`. Chat is not state. SKS is the only Source of Truth.
 
+September pointing document (same direction for every agent): `SKS STRIKE TEAM SEPT handoff 2026-09-07.md`. Not a second board.
+
 Repository governance and source precedence: `SKS repository governance 2026-08-30.md`
 
 Canonical project map: `SKS canonical build index 2026-08-18.md`
@@ -287,7 +289,6 @@ Felons Melon is GO only when all of these are evidenced:
 | Browser Harness release test | Browser Harness + Sparky | FM QA | Requires a reachable deploy candidate and connected browser runtime | Provide/resolve deploy candidate, then run smoke test |
 | GrokBot local board push | GrokBot | Coordination | Local GitHub auth hang may still apply | Grok confirms current status; top-level SKS board remains canonical |
 | MedicBot Telegram assignment | MedicBot + Kirk | Coordination | Profile medicbot exists, gateway stopped | Kirk names a unique Telegram bot. Do not use @theegrokbot |
-| Charlie inbound ping | Kirk | Coordination | Outbound ping 1410 landed | Kirk replies in @hermesbrickbot |
 | KinloaBot work | KinloaBot + Sparky | Trade station | Deliberately deprioritized for current push | Resume after job-hunt + FM deployment release gate |
 | Auto-apply employment engine | Kirk/Sparky | Job survival | CAPTCHAs, logins, ToS, final submit risk | Keep materials/research engine; Kirk final-submits applications |
 
@@ -297,6 +298,8 @@ Felons Melon is GO only when all of these are evidenced:
 |---|---|---|---|
 | Stand up Bravo + Charlie Telegram runtimes | Hermes Alpha | Coordination | `SKS fleet roster 2026-09-07.md`; Bravo @mafuckinhermesbot ping 269; Charlie @hermesbrickbot ping 1410 |
 | Bravo inbound proven | Kirk + Bravo | Coordination | Kirk welcome in @mafuckinhermesbot 2026-09-07; `SKS Bravo status packet.json` |
+| Charlie inbound proven | Kirk + Charlie | Coordination | Kirk session on @hermesbrickbot 2026-09-07; `SKS Charlie status packet.json` |
+| STRIKE TEAM SEPT Handoff | Alpha stub + Bravo expand | Coordination | `SKS STRIKE TEAM SEPT handoff 2026-09-07.md` — pointing doc, live cron, Charlie review candidate |
 | Create SKS repo source-of-truth board | Sparky | Coordination | `SKS integration board.md` |
 | Add hierarchy | Sparky | Coordination | `SKS hierarchy 2026-08-17.md` |
 | Add Sparky AI awareness brief | Sparky | Awareness | `SKS Sparky AI awareness 2026-08-17.md` |

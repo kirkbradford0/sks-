@@ -4,12 +4,13 @@ Shared coordination repository for Kirk Bradford's agent swarm.
 
 Start here:
 
-1. `SKS repository governance 2026-08-30.md` — source precedence, protocol, repository identity, and hygiene.
-2. `SKS single kanban board.md` — the only active cross-agent work queue and current command doctrine.
-3. `SKS Snowball execution contract.md` — how every Hermes worker reads a card, writes evidence, closes out, and proposes one bounded successor.
-4. `SKS canonical build index 2026-08-18.md` — canonical project/artifact inventory until the board links a newer replacement.
-5. `SKS [agent] status packet.json` — dated agent-owned snapshots.
-6. `SKS [contract name] contract.md` — explicit interface contracts.
+1. `SKS STRIKE TEAM SEPT handoff 2026-09-07.md` — September pointing document. Same direction for every agent. Not a second board.
+2. `SKS repository governance 2026-08-30.md` — source precedence, protocol, repository identity, and hygiene.
+3. `SKS single kanban board.md` — the only active cross-agent work queue and current command doctrine.
+4. `SKS Snowball execution contract.md` — how every Hermes worker reads a card, writes evidence, closes out, and proposes one bounded successor.
+5. `SKS canonical build index 2026-08-18.md` — canonical project/artifact inventory until the board links a newer replacement.
+6. `SKS [agent] status packet.json` — dated agent-owned snapshots.
+7. `SKS [contract name] contract.md` — explicit interface contracts.
 
 The integration board, hierarchy, project maps, briefs, mission packages, and dated handoffs are retained reference snapshots. They do not override the canonical board or an explicit contract.
 

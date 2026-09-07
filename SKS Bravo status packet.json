@@ -26,12 +26,12 @@
     }
   ],
   "needs": [
-    "First build card from Kirk or board. Charlie inbound still unproven — do not self-certify."
+    "Kirk names the first build card. Default if he says go: K3 honesty on a branch. Do not self-certify."
   ],
   "blockers": [],
   "next": [
-    "Hold for first build assignment",
-    "Do not take a NOW card until Kirk points at one",
+    "Sept pointing doc: SKS STRIKE TEAM SEPT handoff 2026-09-07.md",
+    "Hold for Kirk to name a build card",
     "Hand finished work to Charlie. Do not self-certify"
   ]
 }

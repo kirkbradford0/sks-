@@ -1,61 +1,122 @@
-# SKS STRIKE TEAM SEPT handoff — 2026-09-07
+# SKS STRIKE TEAM SEPT Handoff — 2026-09-07
 
-Written by Alpha (@ScoutLimabot). Purpose: one document every agent reads first so all lanes point the same direction. This does not replace the roster, the kanban board, or individual handoffs — it is the alignment layer on top of them.
+Purpose: one pointing document so every agent starts September facing the same target.
 
-Read order for any agent waking up fresh:
+This is **not** a second board. Queue stays in `SKS single kanban board.md`. Identity stays in `SKS fleet roster 2026-09-07.md`. Killchain stays in `SKS FM launch killchain 2026-08-30.md`.
+
+Chat is decisions. SKS is state.
+
+Collision: Alpha wrote the first stub (`5b7fd16`). Bravo expanded it the same hour with live cron + killchain after Kirk said include ongoing jobs. Charlie independently verified the cron table and the domain typo (`felonsmelons.com` NXDOMAIN; live is `felonsmelon.com`). One file. Do not fork. Charlie's review candidate: `SKS Charlie review STRIKE TEAM SEPT 2026-09-07.md`.
+
+Read order for any agent waking up:
+
 1. `SKS fleet roster 2026-09-07.md` (who you are)
-2. `SKS single kanban board.md` (what the work is)
+2. `SKS single kanban board.md` (the queue)
 3. This file (where the fleet is pointed this month)
 4. Your own status packet + latest handoff
 
-## Where the fleet stands (2026-09-07)
+## Compass (Sept)
 
-| Callsign | Telegram | State | Proof |
-|---|---|---|---|
-| Alpha | @ScoutLimabot | Working — scout/intake | This session, default profile, OfficeLeft |
-| Bravo | @mafuckinhermesbot | Working — build | Gateway polling. Inbound PROVEN (Kirk's `Bravo24` test, msg logged 06:47). |
-| Charlie | @hermesbrickbot | Working — verify | Gateway polling, outbound ping 1410. Inbound NOT yet proven. |
-| MedicBot | none yet | Provisioned | Profile exists, gateway stopped until Kirk names a bot. |
-| GrokBot | @theegrokbot | PARKED | No spend until Kirk says otherwise. Do not bind or claim. |
+1. **Cash / job survival stays protected.** Kirk clicks Submit. Agents prepare packets.
+2. **Felons Melon works for a stranger.** Honesty first. Then first 10, then first 100.
+3. **Do not widen.** No kiosk, no K8 trusted-person packet, no new FM features, no Grok spend, no live broker, until Kirk unlocks in writing.
 
-Qwen is the local downloaded model on Kirk's home computer — that is a separate host, not a callsign yet. Do not assume Qwen has SKS repo access until Kirk wires it.
+Money path: **FM+ $19.99/mo** (14-day trial). Live: `https://www.felonsmelon.com/`.
 
-## September lanes (the direction)
+Canonical FM git: `kirkbradford0/felonsmelonkirkbradford0gmail` `main`. K2 locked that repo. K2 did **not** prove Vercel is serving that SHA.
 
-Lane 1 — FELONS MELON (felonsmelons.com). Goal: 100 real users. Front page = Stripe TEST checkout. Gazette desks exist (fm, jobs, city, markets, shop, packets, wire). One Hermes session = one primary desk; untagged memory is dropped.
+## Formation
 
-Lane 2 — JOB SEARCH. Canonical desk: `C:\Users\bradf\Job Applications\`. Motley Fool Contract AI Investing Content Writer packet is READY (Greenhouse 5202271007, $45–50/hr) — only Kirk clicks Submit. Concentric Junior OSINT is DEAD, do not apply.
+| Callsign | Job this month | Telegram | Runtime 2026-09-07 | First move |
+|---|---|---|---|---|
+| Kirk | H.I.L. Clicks Submit, live trades, production deploys, auth. | human | — | Fool Submit. Name MedicBot when wanted. |
+| Alpha | Scout / intake. Does not build. Does not certify. | @ScoutLimabot | Gateway up (default profile). Owns live cron. | Intake only. Do not steal Bravo cards. |
+| Bravo | Build / local execution / internal codebase discovery. Does not self-certify. | @mafuckinhermesbot | Gateway up. Inbound proven. | Hold until Kirk names a build card. Then K3 on a branch, never `main`. |
+| Charlie | Verify / contradiction. Review candidate. Does not silently paint green. | @hermesbrickbot | Gateway up. Inbound proven 2026-09-07. | Review Bravo. Never Bravo's own work. First build review waits on a named card. |
+| MedicBot | Fleet mechanic. Not strategist, not trader. | NONE | Profile exists. Gateway stopped on purpose. | Wait for Kirk to name a unique bot. Not @theegrokbot. |
+| GrokBot | Relay. | @theegrokbot | Token live. **Parked. No Hermes gateway.** | Stay parked until Kirk funds it. |
+| Sparky / Codex | Mind / orchestrator. | — | External | No third FM clone. Do not push FM `main` from the shop. |
+| FlowBot | Decision flowcharts. | — | Skill provisioned | Queued behind K4/K5. Not NOW. |
+| KinloaBot / AlphaBot | Trade station / shop kiosk | — | No live packet proof | PARKED until K5 PASS. |
 
-Lane 3 — MARKETS. Live book: 100 shares USDE @ $8.29. Rules are locked: 3% stop ($8.04 full book), +3% sell 50 shares ($8.54), ladder remainder $8.37 then $8.20 out. No adds, no averaging down, no live API orders — broker stays LOCKED. Paper desk `C:\Users\bradf\usde-desk` runs on cron.
+Qwen is a local model on Kirk's home computer — a host, not a callsign. Do not assume SKS access until Kirk wires it.
 
-Lane 4 — SHOP (Bradford Auto). Lobby kiosk is the Lovable check-in app; it still discards data. Kiosk receiver node: `C:/Users/bradf/kiosk-node/`.
+Roles are assignments, not machine souls. Current host: OfficeLeft running Alpha + Bravo + Charlie gateways together.
 
-## Division of labor (do not blur)
+## NOW (WIP max 3 — do not add a fourth)
 
-- Alpha scouts, intakes, orients, writes alignment docs like this one. Does not certify Bravo's builds.
-- Bravo builds and codes. Hands finished work to Charlie. Does not self-certify.
-- Charlie challenges and verifies. Writes review candidates. Does not silently repair to make things look green.
-- MedicBot (when online) keeps airframes alive — gateways, pairing, cron ghosts. Not a strategist, not a trader.
-- Kirk (H.I.L.) makes all final calls: submit, spend, unlock, deploy.
+1. **K3 — Fix only launch-blocking bugs** (Bravo when Kirk points). Honesty CTAs, job-board SAMPLE label, webhook/docs, dead CTAs. Branch only. No deploy. No charges. No new features. Map: `SKS FM K3 blocker map 2026-08-30.md`.
+2. **K2 — Canonical FM tree** — PASS as a git lock. Fast-forward before edits. Live SHA still unproven vs origin.
+3. **Protect daily income lane** — Motley Fool Contract AI Investing Content Writer packet is ready (Greenhouse 5202271007). Kirk clicks Submit. Concentric Junior OSINT is DEAD. Do not apply.
 
-VERIFY → CERTIFY always needs a different owner than the builder.
+Killchain: K1 FAIL (honesty + unproven jobs, closed as recon). K2 PASS git lock. K3 ACTIVE after ff-only pull. K4–K7 queued. K8 SHELVED. K9 PARKED.
 
-## Open obligations
+Shop kiosk is **not** a September NOW lane. Killchain froze it until FM works.
 
-1. Kirk: reply `ping` in @hermesbrickbot to prove Charlie inbound. Last unproven link in the core three.
-2. Kirk: name a Telegram bot for MedicBot when the nurse is wanted online (never @theegrokbot).
-3. Bravo: first build task of September is unassigned — Kirk calls the lane, Bravo takes it from the kanban board.
-4. Charlie: after inbound proof, first review task is to re-verify whatever Bravo ships.
-5. Qwen (home computer): standby until Kirk wires it into SKS.
+## Cron / ongoing jobs (live `jobs.json`, not memory)
 
-## Rules that keep us alive
+Checked 2026-09-07 ~12:14 MT on OfficeLeft.
 
-- SKS repo (`github.com/kirkbradford0/sks-`) is the ONLY Source of Truth. Chat is for decisions, not state.
-- Every session ends with: update status packet → write handoff → commit/push → record origin SHA.
+Cron lives on the **default Hermes profile (Alpha)**. Bravo: no `jobs.json`. Charlie: no `jobs.json`. MedicBot gateway not started.
+
+| Job | ID | Owner | Schedule | Last | Next | Mode | Status |
+|---|---|---|---|---|---|---|---|
+| TwoAM research | `7e38687fbf16` | Alpha default | `0 2 * * *` MT | ok 2026-09-07 02:00 | 2026-09-08 02:00 | `no_agent` `twoam_research.py` | LIVE. 22 runs. Report dated 2026-09-07. Read-only. Not a buy. |
+| USDE paper desk | `3296ed6bac89` | Alpha default | every 15m | ok 2026-09-07 12:11 | 2026-09-07 12:26 | `no_agent` `usde_desk.py` | Scheduler LIVE (475 runs, paper only). Payload clock is stale: Charlie read report ts `2026-09-04T19:55:00Z`, shares 0. Cron ok ≠ desk current. |
+
+**Not running:** Gmail auto-sort. Script exists on disk. Live `jobs.json` has two jobs only. Do not claim a 2h Gmail cron until someone re-creates it.
+
+**Broker lock:** USDE `UNLOCK.txt` missing. Line 1 must be `UNLOCK` in Kirk writing before any live API. Live book (Kirk filled, Hermes did not): 100 USDE @ $8.29, cost $829.36. Rule: 3% stop full book ($8.04); +3% sell 50 ($8.54); ladder rest. No add. No average down.
+
+**TwoAM:** candidate-feed → KinloaBot still PENDING. No execution.
+
+Do not clone these crons onto Bravo/Charlie. One scheduler, one owner.
+
+Known packet rot (do not silently rewrite other agents' packets):
+
+- `SKS GrokBot status packet.json` still says `"status": "working"` dated 2026-08-17. Roster and this file say PARKED.
+- `SKS Hermes status packet.json` still asks for Bravo inbound. Bravo inbound is already proven (`4b3fd94`).
+- NOW still holds K2 after declaring PASS. WIP max 3 with a finished lock in the slot. Do not add a fourth card; collapse is Kirk/Alpha board work, not a silent Bravo edit of NOW.
+
+## Iron rules
+
+```
+pull origin/main
+read this handoff + fleet roster + single kanban + your status packet
+do one assigned job
+update your packet + dated handoff
+commit / push / verify origin/main SHA
+```
+
+- SKS (`kirkbradford0/sks-`) is the only Source of Truth.
+- A board name is not a runtime. Confirm process/gateway before claiming work is in progress.
+- Bravo builds. Charlie verifies. Alpha does not certify Bravo.
+- Kirk clicks Post, Submit, live trades, production deploys, and auth.
 - Never commit tokens, .env, API keys, or private local paths.
+- Do not push Felons Melon `main` from the shop. Vercel deploys on `main`. Honesty work stays on a branch (`k3-launch-honesty` or successor).
+- Live Public.com / broker stays locked until Kirk writes UNLOCK.
+- One primary desk per session. Untagged memory is dropped.
 - If two agents will edit the same path, report the collision before pushing.
-- Going-home file pattern: `SKS Hermes going-home handoff YYYY-MM-DD.md`.
 
-## Alpha's read of the situation
+## Kirk still owes
 
-The core three (Alpha/Bravo/Charlie) are standing for the first time. The bottleneck is no longer runtime — it is tasking. One Charlie inbound proof, one build assignment to Bravo, and this fleet moves from "alive" to "productive." Recommend Kirk pick the first Bravo build target from Lane 1 or Lane 4 today.
+1. Motley Fool Greenhouse 5202271007 — packet ready — **Kirk clicks Submit**.
+2. Point Bravo at the first build card when you want code (default: K3 honesty on a branch).
+3. Name a Telegram bot for MedicBot when you want the nurse. Not @theegrokbot.
+4. Confirm whether Vercel production is hooked to `felonsmelonkirkbradford0gmail` `main` before any production deploy.
+
+## What each agent does next
+
+**Alpha:** Scout. Intake. Own the two live crons. Do not start builds.
+
+**Bravo:** Pointing pass done. Next build is K3 **only if Kirk names it**. Hand the result to Charlie.
+
+**Charlie:** Inbound proven. First review of this pointing doc is already a candidate. First **build** review waits on Kirk naming a card. Do not repair Bravo's work to look green.
+
+**MedicBot:** Stay dark until a bot name exists.
+
+**GrokBot:** Parked.
+
+**Sparky/Codex:** Same compass. Same board. Same killchain. No third FM tree.
+
+Sept starts aligned. Do not invent a new target.

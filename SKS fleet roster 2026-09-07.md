@@ -4,6 +4,8 @@ Purpose: one placemarker so every Hermes instance and every other AI knows who i
 
 This is not a second board. The work queue stays in `SKS single kanban board.md`. This file is identity + runtime proof.
 
+September pointing document: `SKS STRIKE TEAM SEPT handoff 2026-09-07.md`.
+
 Canonical repo (only Source of Truth): `https://github.com/kirkbradford0/sks-`
 
 Do not create competing truth repos. Chat is for decisions. SKS is for state.
@@ -29,7 +31,7 @@ Never commit tokens, .env, API keys, or private local paths.
 |---|---|---|---|---|
 | Alpha | @ScoutLimabot (display Alpha) | default on OfficeLeft shop PC | Scout / intake / this session | Gateway running. This session. |
 | Bravo | @mafuckinhermesbot (display Bravo) | bravo | Build / coding / local execution | Gateway polling. Outbound ping 269. Inbound proven 2026-09-07 (Kirk welcome). |
-| Charlie | @hermesbrickbot (display Charlie) | charlie | Verify / contradiction / review candidate | Gateway polling. Outbound ping message_id 1410. Inbound not yet proven. |
+| Charlie | @hermesbrickbot (display Charlie) | charlie | Verify / contradiction / review candidate | Gateway polling. Outbound ping 1410. Inbound proven 2026-09-07. |
 | MedicBot | NONE yet | medicbot | GrokBot nurse / fleet mechanic | Profile exists. Gateway stopped until Kirk names a bot. |
 | GrokBot | @theegrokbot | none | Relay. Parked until Kirk can afford it. | Token live. No Hermes gateway. Do not steal this token. |
 
@@ -58,4 +60,4 @@ Kirk: Alpha Bravo Charlie, then Grok when affordable. Meantime MedicBot is the n
 ## Proof Kirk still owes
 
 - Bravo inbound: PROVEN 2026-09-07.
-- Charlie inbound: still owed. Reply in @hermesbrickbot.
+- Charlie inbound: PROVEN 2026-09-07.
