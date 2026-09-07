@@ -2,30 +2,30 @@
 
 ## What I did
 
-- Came online as Charlie, OfficeLeft, profile `charlie`, @hermesbrickbot. Kirk inbound proven this session (not a literal `ping`).
-- Pulled `kirkbradford0/sks-`. Origin/main at write start: `5b7fd16` (Alpha already committed a Sept pointing file).
-- Collision: Bravo has **uncommitted** rewrite of that same file plus README, roster, board, index, Bravo packet/handoff. Charlie did not touch those paths.
-- Independently checked live cron on default profile: TwoAM + USDE paper only. Charlie/Bravo profiles have no jobs. Gmail auto-sort is not scheduled.
-- Wrote review candidate `SKS Charlie review STRIKE TEAM SEPT 2026-09-07.md`. Updated this packet.
+- Inbound proven this session on @hermesbrickbot.
+- Sept pointing review earlier: `SKS Charlie review STRIKE TEAM SEPT 2026-09-07.md`.
+- Kirk correction: **live Felons Melon is GitHub current.** Wrote that into `SKS STRIKE TEAM SEPT handoff 2026-09-07.md`. Stopped asking whether Vercel is hooked.
+- Independently measured anyway: GitHub `main` `c8daaac` hero is "You left with nothing / This is the access spot." Live `felonsmelon.com` hero is "Your story. Told right." String not in this clone. Review candidate: `SKS Charlie review FM live vs GitHub 2026-09-07.md`.
+- Did not paint live HTML as equal to `c8daaac`. Did not push FM `main`.
 
 ## Commit SHA
 
-`25ba379` on origin/main. Origin at write start was `5b7fd16`.
+Recorded after push.
 
 ## State
 
-- Charlie: working. Inbound proven. Review candidate filed. No self-certify of Bravo.
-- Origin Sept file: Alpha copy, no cron, wrong FM domain (`felonsmelons.com` NXDOMAIN).
-- Bravo working copy: cron table matches live `jobs.json`. Not on origin yet.
-- Cron owner: default/Alpha profile. Two live jobs. Broker locked (`UNLOCK.txt` missing).
-- USDE: scheduler ok, report payload ts still 2026-09-04. Do not treat cron-ok as a fresh tick.
+- Charlie: working. Inbound proven.
+- Doctrine: live = GitHub current (`kirkbradford0/felonsmelonkirkbradford0gmail` `main`).
+- Fact: live homepage copy ≠ that `main` this hour. Deploy/source bug, not a second tree.
+- Cron (default profile): TwoAM paused, USDE paper paused, SKS running tasks every 6h scheduled. Charlie has no jobs.
+- Broker still locked. Grok parked. MedicBot unnamed.
 
 ## Process fix
 
-A board/handoff on origin is not the same object as a dirty working tree. Report the collision. Do not silently merge. Cron facts come from live `jobs.json`, not memory.
+Kirk's lock overrides the old K2 "live SHA unproven" caveat as *canon*. It does not override a live-vs-git copy diff. Record both. Do not re-ask the locked question.
 
 ## Next action for Kirk
 
-1. Let Bravo push the Sept pointing rewrite, or tell Charlie to ignore it.
-2. Fool packet remains Kirk-click Submit.
-3. Name Bravo's first build card when you want code (default: K3 honesty on a branch). Charlie reviews after, not before.
+1. Fool Submit is still yours.
+2. Name Bravo's first build card when you want code.
+3. If you want the homepage mismatch chased, that is Vercel dashboard / which commit production last built — not a new FM repo.

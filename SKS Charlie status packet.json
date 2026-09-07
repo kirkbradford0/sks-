@@ -2,7 +2,7 @@
   "agent": "Charlie",
   "status": "working",
   "date": "2026-09-07",
-  "source": "OfficeLeft. Hermes profile charlie. Telegram @hermesbrickbot. Inbound proven: Kirk session 2026-09-07 (kolobian paste, mesh/reel questions, STRIKE TEAM SEPT order).",
+  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Inbound proven. Kirk locked: live FM = GitHub current.",
   "owns": [
     "Verification / contradiction detection",
     "Review candidates (does not silently repair conflicts)",
@@ -12,27 +12,27 @@
     {
       "name": "telegram",
       "type": "messaging",
-      "contract": "@hermesbrickbot display name Charlie. Distinct token from Alpha/Bravo. Pairing: Kirk only. Inbound proven 2026-09-07."
+      "contract": "@hermesbrickbot display name Charlie. Pairing: Kirk only. Inbound proven 2026-09-07."
     },
     {
       "name": "hermes-profile",
       "type": "runtime",
-      "contract": "profile name charlie. Gateway installed as login-item fallback. One bot token, one gateway. Cron: no jobs.json on this profile."
+      "contract": "profile charlie. Cron: no jobs.json on this profile."
     },
     {
       "name": "sks-board",
       "type": "protocol",
-      "contract": "pull -> read SKS fleet roster + kanban -> update this packet -> dated handoff -> commit/push -> verify origin/main. Collision: report before editing a dirty shared path."
+      "contract": "pull -> packet -> dated handoff -> commit/push -> verify origin/main. Collision: report before editing a dirty shared path."
     }
   ],
   "needs": [
-    "Bravo to push the uncommitted Sept pointing rewrite so origin matches the working tree",
-    "Kirk to name Bravo's first build card before Charlie reviews a build"
+    "Kirk names Bravo's first build card before Charlie reviews a build",
+    "Someone with Vercel access to explain why live hero is not origin/main c8daaac — without treating Vercel as a second canon"
   ],
   "blockers": [],
   "next": [
-    "Sept pointing review candidate is SKS Charlie review STRIKE TEAM SEPT 2026-09-07.md",
-    "Do not edit Bravo's dirty Sept file / board / README",
-    "Do not certify Bravo. First build review waits on a named card"
+    "FM live-vs-git review: SKS Charlie review FM live vs GitHub 2026-09-07.md",
+    "Do not certify Bravo. Do not push FM main",
+    "Doctrine: live = GitHub current. Mismatch is a deploy bug"
   ]
 }

@@ -23,7 +23,9 @@ Read order for any agent waking up:
 
 Money path: **FM+ $19.99/mo** (14-day trial). Live: `https://www.felonsmelon.com/`.
 
-Canonical FM git: `kirkbradford0/felonsmelonkirkbradford0gmail` `main`. K2 locked that repo. K2 did **not** prove Vercel is serving that SHA.
+Canonical FM git: `kirkbradford0/felonsmelonkirkbradford0gmail` `main`. Kirk 2026-09-07: **the live copy is GitHub current.** Do not treat Vercel as a second source of truth. Do not ask Kirk again whether production is hooked to this repo.
+
+Charlie measured the same hour: GitHub `main` is `c8daaac` (2026-07-22), local hero **"You left with nothing / This is the access spot."** Live `https://www.felonsmelon.com/` hero **"Your story. Told right."** That string is not in this clone's git history. Doctrine stands. The homepage mismatch is a deploy/source bug to close, not a second canon.
 
 ## Formation
 
@@ -46,7 +48,7 @@ Roles are assignments, not machine souls. Current host: OfficeLeft running Alpha
 ## NOW (WIP max 3 — do not add a fourth)
 
 1. **K3 — Fix only launch-blocking bugs** (Bravo when Kirk points). Honesty CTAs, job-board SAMPLE label, webhook/docs, dead CTAs. Branch only. No deploy. No charges. No new features. Map: `SKS FM K3 blocker map 2026-08-30.md`.
-2. **K2 — Canonical FM tree** — PASS as a git lock. Fast-forward before edits. Live SHA still unproven vs origin.
+2. **K2 — Canonical FM tree** — PASS as a git lock. Kirk: live = GitHub current. Fast-forward local before edits. Charlie 2026-09-07: live homepage hero still disagrees with `origin/main` `c8daaac`. Close that as a deploy bug, not as a second tree.
 3. **Protect daily income lane** — Motley Fool Contract AI Investing Content Writer packet is ready (Greenhouse 5202271007). Kirk clicks Submit. Concentric Junior OSINT is DEAD. Do not apply.
 
 Killchain: K1 FAIL (honesty + unproven jobs, closed as recon). K2 PASS git lock. K3 ACTIVE after ff-only pull. K4–K7 queued. K8 SHELVED. K9 PARKED.
@@ -104,7 +106,7 @@ commit / push / verify origin/main SHA
 1. Motley Fool Greenhouse 5202271007 — packet ready — **Kirk clicks Submit**.
 2. Point Bravo at the first build card when you want code (default: K3 honesty on a branch).
 3. Name a Telegram bot for MedicBot when you want the nurse. Not @theegrokbot.
-4. Confirm whether Vercel production is hooked to `felonsmelonkirkbradford0gmail` `main` before any production deploy.
+4. Do not re-ask whether live is GitHub current — Kirk locked that. Remaining FM fact: live homepage copy ≠ `origin/main` hero as of 2026-09-07. Find the extra Vercel source or stale deploy. Do not push FM `main` from the shop.
 
 ## What each agent does next
 
