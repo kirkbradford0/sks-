@@ -28,7 +28,7 @@ Never commit tokens, .env, API keys, or private local paths.
 | Callsign | Telegram | Hermes profile | Job | Runtime proof 2026-09-07 |
 |---|---|---|---|---|
 | Alpha | @ScoutLimabot (display Alpha) | default on OfficeLeft shop PC | Scout / intake / this session | Gateway running. This session. |
-| Bravo | @mafuckinhermesbot (display Bravo) | bravo | Build / coding / local execution | Gateway polling. Outbound ping message_id 269. Inbound not yet proven. |
+| Bravo | @mafuckinhermesbot (display Bravo) | bravo | Build / coding / local execution | Gateway polling. Outbound ping 269. Inbound proven 2026-09-07 (Kirk welcome). |
 | Charlie | @hermesbrickbot (display Charlie) | charlie | Verify / contradiction / review candidate | Gateway polling. Outbound ping message_id 1410. Inbound not yet proven. |
 | MedicBot | NONE yet | medicbot | GrokBot nurse / fleet mechanic | Profile exists. Gateway stopped until Kirk names a bot. |
 | GrokBot | @theegrokbot | none | Relay. Parked until Kirk can afford it. | Token live. No Hermes gateway. Do not steal this token. |
@@ -57,4 +57,5 @@ Kirk: Alpha Bravo Charlie, then Grok when affordable. Meantime MedicBot is the n
 
 ## Proof Kirk still owes
 
-Reply `ping` in @mafuckinhermesbot and @hermesbrickbot. Outbound is proven. Inbound is not, until those replies land.
+- Bravo inbound: PROVEN 2026-09-07.
+- Charlie inbound: still owed. Reply in @hermesbrickbot.

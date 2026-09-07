@@ -2,7 +2,7 @@
   "agent": "Bravo",
   "status": "working",
   "date": "2026-09-07",
-  "source": "Hermes Alpha on OfficeLeft stood up profile bravo and Telegram @mafuckinhermesbot. Gateway polling confirmed. Outbound ping message_id 269.",
+  "source": "OfficeLeft. Hermes profile bravo. Telegram @mafuckinhermesbot. Inbound proven: Kirk 'Bravo Welcome to the party' / Bravo24.",
   "owns": [
     "Build / coding / local execution lane",
     "Internal codebase discovery (Claw 1 Bravo)",
@@ -17,7 +17,7 @@
     {
       "name": "hermes-profile",
       "type": "runtime",
-      "contract": "profile name bravo. Gateway installed as login-item fallback (UAC blocked Scheduled Task). One bot token, one gateway."
+      "contract": "profile name bravo. Gateway polling. Host OfficeLeft. One bot token, one gateway."
     },
     {
       "name": "sks-board",
@@ -26,12 +26,12 @@
     }
   ],
   "needs": [
-    "Kirk replies ping in @mafuckinhermesbot so inbound is proven, not just outbound"
+    "First build card from Kirk or board. Charlie inbound still unproven — do not self-certify."
   ],
   "blockers": [],
   "next": [
-    "Wait for Kirk inbound ping on Bravo",
-    "Take first build card only after Charlie is also inbound-proven",
-    "Do not self-certify. Hand finished work to Charlie"
+    "Hold for first build assignment",
+    "Do not take a NOW card until Kirk points at one",
+    "Hand finished work to Charlie. Do not self-certify"
   ]
 }
