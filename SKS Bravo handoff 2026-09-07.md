@@ -8,7 +8,7 @@
 
 ## Commit SHA
 
-Recorded after push.
+`bb39fa2` on origin/main.
 
 ## State
 
