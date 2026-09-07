@@ -55,20 +55,21 @@ Shop kiosk is **not** a September NOW lane. Killchain froze it until FM works.
 
 ## Cron / ongoing jobs (live `jobs.json`, not memory)
 
-Checked 2026-09-07 ~12:14 MT on OfficeLeft.
+Checked 2026-09-07 ~12:50 MT on OfficeLeft. Kirk: cancel and close TwoAM, USDE paper desk, Gmail auto-sort for now.
 
 Cron lives on the **default Hermes profile (Alpha)**. Bravo: no `jobs.json`. Charlie: no `jobs.json`. MedicBot gateway not started.
 
-| Job | ID | Owner | Schedule | Last | Next | Mode | Status |
-|---|---|---|---|---|---|---|---|
-| TwoAM research | `7e38687fbf16` | Alpha default | `0 2 * * *` MT | ok 2026-09-07 02:00 | 2026-09-08 02:00 | `no_agent` `twoam_research.py` | LIVE. 22 runs. Report dated 2026-09-07. Read-only. Not a buy. |
-| USDE paper desk | `3296ed6bac89` | Alpha default | every 15m | ok 2026-09-07 12:11 | 2026-09-07 12:26 | `no_agent` `usde_desk.py` | Scheduler LIVE (475 runs, paper only). Payload clock is stale: Charlie read report ts `2026-09-04T19:55:00Z`, shares 0. Cron ok ≠ desk current. |
+| Job | ID | Owner | Schedule | Last | Mode | Status |
+|---|---|---|---|---|---|---|
+| TwoAM research | `7e38687fbf16` | Alpha default | `0 2 * * *` MT | ok 2026-09-07 02:00 | `no_agent` `twoam_research.py` | **PAUSED** 2026-09-07 12:50 MT. Job kept, not deleted. Resume only if Kirk says. |
+| USDE paper desk | `3296ed6bac89` | Alpha default | every 15m | ok 2026-09-07 12:43 | `no_agent` `usde_desk.py` | **PAUSED** 2026-09-07 12:50 MT. Job kept, not deleted. Payload clock was already stale. |
+| Gmail auto-sort | none | — | — | — | script on disk only | **CLOSED / never scheduled.** No cron row to pause. Do not create one. |
 
-**Not running:** Gmail auto-sort. Script exists on disk. Live `jobs.json` has two jobs only. Do not claim a 2h Gmail cron until someone re-creates it.
+Still live (Kirk did not cancel): `SKS running tasks` `d0bf85c6789b` every 6h on Alpha default. Next 2026-09-07 18:00 MT.
 
-**Broker lock:** USDE `UNLOCK.txt` missing. Line 1 must be `UNLOCK` in Kirk writing before any live API. Live book (Kirk filled, Hermes did not): 100 USDE @ $8.29, cost $829.36. Rule: 3% stop full book ($8.04); +3% sell 50 ($8.54); ladder rest. No add. No average down.
+**Broker lock:** USDE `UNLOCK.txt` missing. Live book unchanged. No live API.
 
-**TwoAM:** candidate-feed → KinloaBot still PENDING. No execution.
+**TwoAM:** candidate-feed still PENDING. Research cron is paused, not deleted.
 
 Do not clone these crons onto Bravo/Charlie. One scheduler, one owner.
 
@@ -107,7 +108,7 @@ commit / push / verify origin/main SHA
 
 ## What each agent does next
 
-**Alpha:** Scout. Intake. Own the two live crons. Do not start builds.
+**Alpha:** Scout. Intake. Own remaining Alpha cron (`SKS running tasks` every 6h). TwoAM + USDE paused. Do not start builds.
 
 **Bravo:** Pointing pass done. Next build is K3 **only if Kirk names it**. Hand the result to Charlie.
 
