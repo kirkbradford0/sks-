@@ -29,7 +29,8 @@ This file is the map. The active work queue lives in `SKS single kanban board.md
 | SKS | GitHub `kirkbradford0/sks-` | active | Swarm coordination, status packets, hierarchy, kanban, contracts |
 | SKS integration board | GitHub file | active | Current one-screen roster for agents |
 | SKS hierarchy | GitHub file | active | Who reports to what and why |
-| Agent status packets | GitHub files | active | Durable state from Hermes, GrokBot, future Alpha/Kinloa |
+| Agent status packets | GitHub files | active | Durable state from Hermes, GrokBot, Bravo, Charlie, MedicBot, FlowBot, future Alpha/Kinloa |
+| SKS fleet roster | GitHub `SKS fleet roster 2026-09-07.md` | active | Identity + runtime proof. Only Source of Truth for who is alive and which Telegram bot they are |
 | FM WarBoards | Google Drive folder `WarBoards - Sparky, Kirks caduceus for Hermes` | active | Sparky-to-Hermes orchestration runs; first artifact: `FM-WARBOARD-RUN-001 — Hermes Orchestration Bootstrap — 2026-08-30` |
 
 ## Tier 1: Money / Commercial Path

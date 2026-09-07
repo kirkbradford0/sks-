@@ -1,0 +1,37 @@
+{
+  "agent": "Bravo",
+  "status": "working",
+  "date": "2026-09-07",
+  "source": "Hermes Alpha on OfficeLeft stood up profile bravo and Telegram @mafuckinhermesbot. Gateway polling confirmed. Outbound ping message_id 269.",
+  "owns": [
+    "Build / coding / local execution lane",
+    "Internal codebase discovery (Claw 1 Bravo)",
+    "Evidence packets back to SKS after each build"
+  ],
+  "interfaces": [
+    {
+      "name": "telegram",
+      "type": "messaging",
+      "contract": "@mafuckinhermesbot display name Bravo. Distinct token from Alpha/Charlie. Pairing: Kirk only."
+    },
+    {
+      "name": "hermes-profile",
+      "type": "runtime",
+      "contract": "profile name bravo. Gateway installed as login-item fallback (UAC blocked Scheduled Task). One bot token, one gateway."
+    },
+    {
+      "name": "sks-board",
+      "type": "protocol",
+      "contract": "pull -> read SKS fleet roster + kanban -> update this packet -> dated handoff -> commit/push -> verify origin/main"
+    }
+  ],
+  "needs": [
+    "Kirk replies ping in @mafuckinhermesbot so inbound is proven, not just outbound"
+  ],
+  "blockers": [],
+  "next": [
+    "Wait for Kirk inbound ping on Bravo",
+    "Take first build card only after Charlie is also inbound-proven",
+    "Do not self-certify. Hand finished work to Charlie"
+  ]
+}

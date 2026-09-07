@@ -1,0 +1,38 @@
+{
+  "agent": "MedicBot",
+  "status": "provisioned",
+  "date": "2026-09-07",
+  "source": "Hermes Alpha created profile medicbot on OfficeLeft. No Telegram token assigned. Gateway not started. GrokBot remains parked.",
+  "mandate": "GrokBot nurse / fleet mechanic. Fix stalled gateways, dead Telegram bots, pairing, cron ghosts, auth, and hygiene. Sheepdog: never claim an agent is working without a live process. Not strategist, not trader, not GrokBot.",
+  "owns": [
+    "Fleet health: gateways, pairing, cron ghosts, token-conflict safety",
+    "Redacted status evidence back to SKS"
+  ],
+  "interfaces": [
+    {
+      "name": "telegram",
+      "type": "messaging",
+      "contract": "PENDING. No bot assigned. Do not steal @theegrokbot. Kirk names a MedicBot Telegram username before gateway start."
+    },
+    {
+      "name": "hermes-profile",
+      "type": "runtime",
+      "contract": "profile name medicbot exists. Gateway stopped until a unique Telegram token is assigned."
+    },
+    {
+      "name": "grokbot-nurse",
+      "type": "protocol",
+      "contract": "When GrokBot is funded, MedicBot repairs what Grok will not touch. Until then MedicBot still sheepdogs Alpha/Bravo/Charlie."
+    }
+  ],
+  "needs": [
+    "Kirk picks a Telegram bot for MedicBot from unused bots, or creates a new one"
+  ],
+  "blockers": [
+    "No Telegram token assigned; gateway not started on purpose"
+  ],
+  "next": [
+    "Do not start medicbot gateway until Kirk names the bot",
+    "First live job after token: confirm Alpha/Bravo/Charlie still polling and write a health packet"
+  ]
+}

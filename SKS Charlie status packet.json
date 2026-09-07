@@ -1,0 +1,37 @@
+{
+  "agent": "Charlie",
+  "status": "working",
+  "date": "2026-09-07",
+  "source": "Hermes Alpha on OfficeLeft stood up profile charlie and Telegram @hermesbrickbot. Gateway polling confirmed. Outbound ping message_id 1410.",
+  "owns": [
+    "Verification / contradiction detection",
+    "Review candidates (does not silently repair conflicts)",
+    "Immune-system checks when cards and tests disagree"
+  ],
+  "interfaces": [
+    {
+      "name": "telegram",
+      "type": "messaging",
+      "contract": "@hermesbrickbot display name Charlie. Distinct token from Alpha/Bravo. Pairing: Kirk only."
+    },
+    {
+      "name": "hermes-profile",
+      "type": "runtime",
+      "contract": "profile name charlie. Gateway installed as login-item fallback (UAC blocked Scheduled Task). One bot token, one gateway."
+    },
+    {
+      "name": "sks-board",
+      "type": "protocol",
+      "contract": "pull -> read SKS fleet roster + kanban -> update this packet -> dated handoff -> commit/push -> verify origin/main"
+    }
+  ],
+  "needs": [
+    "Kirk replies ping in @hermesbrickbot so inbound is proven, not just outbound"
+  ],
+  "blockers": [],
+  "next": [
+    "Wait for Kirk inbound ping on Charlie",
+    "First job is a review candidate, not a build",
+    "Do not certify Bravo's own work without a separate check"
+  ]
+}

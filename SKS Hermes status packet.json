@@ -1,30 +1,26 @@
 {
   "agent": "Hermes",
-  "status": "jobs-desk",
-  "date": "2026-09-04",
-  "source": "OfficeLeft shop PC. Motley Fool packet ready; Concentric junior OSINT dead.",
+  "status": "working",
+  "date": "2026-09-07",
+  "source": "OfficeLeft shop PC. This session is Alpha via @ScoutLimabot. Bravo and Charlie gateways stood up same host.",
   "owns": [
     "Traffic control / SKS dated handoffs",
+    "Fleet roster (identity + runtime proof)",
     "TwoAM congressional research engine",
     "cron TwoAM research 02:00 MT",
     "USDE $100 paper seesaw desk (broker locked)",
-    "Job-search packet desk (Fool tonight)"
+    "Job-search packet desk"
   ],
   "interfaces": [
     {
-      "name": "motley-fool-ai-writer",
-      "type": "application",
-      "contract": "Greenhouse 5202271007. Packet ready. Kirk submits. Hermes does not click Submit."
+      "name": "telegram-alpha",
+      "type": "messaging",
+      "contract": "@ScoutLimabot display name Alpha. Default Hermes profile. Distinct from Bravo/Charlie tokens."
     },
     {
-      "name": "concentric-junior-osint",
-      "type": "application",
-      "contract": "DEAD. Do not apply. Watch Advisors board for junior/remote reopen."
-    },
-    {
-      "name": "usde-live-book",
-      "type": "data_model",
-      "contract": "Kirk: 100 sh USDE @ 8.29. Stop 8.04. Clip 50 @ 8.54. Ladder 8.37 then 8.20. No add."
+      "name": "fleet-roster",
+      "type": "document",
+      "contract": "SKS fleet roster 2026-09-07.md is the placemarker. SKS is the only Source of Truth."
     },
     {
       "name": "public-com-broker",
@@ -32,13 +28,13 @@
       "contract": "LOCKED."
     }
   ],
-  "needs": [],
-  "blockers": [
-    "Fool application waiting on Kirk Submit click"
+  "needs": [
+    "Kirk inbound ping on Bravo and Charlie"
   ],
+  "blockers": [],
   "next": [
-    "Kirk submits Fool packet",
-    "On 'Fool submitted' mark ledger Applied and start Day 1-2 follow-up",
-    "Do not resurrect Concentric junior OSINT"
+    "Kirk pings @mafuckinhermesbot and @hermesbrickbot",
+    "Kirk names a Telegram bot for MedicBot when wanted",
+    "GrokBot stays parked until Kirk funds it"
   ]
 }
