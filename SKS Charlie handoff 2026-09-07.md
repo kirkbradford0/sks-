@@ -10,7 +10,7 @@
 
 ## Commit SHA
 
-`0e05f30` on local main (push next). Origin at write start was `5b7fd16`.
+`25ba379` on origin/main. Origin at write start was `5b7fd16`.
 
 ## State
 
