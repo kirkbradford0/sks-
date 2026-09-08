@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-07 (evening pass) by Alpha (@ScoutLimabot)
+Updated: 2026-09-08 (morning pass) by Alpha (@ScoutLimabot)
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -13,9 +13,9 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## OPEN — Fleet tasks
 
-- [ ] **Wire Hermes into Discord server `--SKS---`** — server ID 1546468280343072808, invite from kirkbradford0 expires 2026-10-07. Scheduled 2026-09-08. Steps: Kirk creates Discord app at discord.com/developers/applications, resets token, enables Developer Mode, copies server ID; Alpha wires token into a profile gateway (Telegram-only today). Do NOT post the token in SKS repo or chat.
-- [ ] Build apply-light harness from spec v1 (SKS apply-light harness build spec v1 2026-09-07.md) — builder: Claude, operator: Hermes, hard rule: no auto-submit, no PII off-machine. Scaffold exists at C:\Users\bradf\apply-light-harness\ (BUILD-SPEC.md only — no code yet as of 2026-09-07 evening).
-- [ ] **Review Kirk's FIRST WARBOARD TEST.pdf** (uploaded to repo root 2026-09-07, commit 6b62f34) — no agent has reviewed or responded yet. Kirk is testing the FM WarBoard flow; on-duty agent should open it, respond to Kirk, and file a dated note.
+- [ ] **Wire Hermes into Discord server `--SKS---`** — server ID 1546468280343072808, invite from kirkbradford0 expires 2026-10-07. Scheduled TODAY 2026-09-08. Steps: Kirk creates Discord app at discord.com/developers/applications, resets token, enables Developer Mode, copies server ID; Alpha wires token into a profile gateway (Telegram-only today). Do NOT post the token in SKS repo or chat.
+- [ ] Build apply-light harness from spec v1 (SKS apply-light harness build spec v1 2026-09-07.md) — builder: Claude, operator: Hermes, hard rule: no auto-submit, no PII off-machine. Scaffold exists at C:\Users\bradf\apply-light-harness\ (BUILD-SPEC.md only — re-verified no code yet 2026-09-08).
+- [ ] **Review Kirk's FIRST WARBOARD TEST.pdf** (uploaded to repo root 2026-09-07, commit 6b62f34) — no agent has reviewed or responded yet. Kirk is testing the FM WarBoard flow; on-duty agent should open it, respond to Kirk, and file a dated note. (Note: the older Run-001 handoff FM-20260830-0001 already executed 2026-08-30 and returned BLOCKED on revoked Drive OAuth — re-authed 2026-09-01. A stale copy of that handoff sits untracked in repo root; do not treat as a new task.)
 - [ ] Bravo: first build task — unassigned until Kirk picks
 - [ ] Charlie: first **build** review waits on Kirk naming Bravo's card. Live-vs-git review already filed.
 - [ ] MedicBot: start gateway once Telegram bot exists
@@ -31,7 +31,4 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## DONE (recent, keep for one pass)
 
-- [x] 2026-09-07 SINEWATCH side-gig logo stills delivered to Kirk via Telegram (Bravo; bb39fa2) — closed, resume only if Kirk names it
-- [x] 2026-09-07 Charlie inbound proven (Kirk session on @hermesbrickbot)
-- [x] 2026-09-07 Bravo + Charlie gateways stood up — RE-VERIFIED RUNNING 2026-09-07 evening (bravo + charlie gateway processes live on OfficeLeft)
-- [x] 2026-09-07 STRIKE TEAM SEPT handoff committed (5b7fd16) then expanded
+- [x] 2026-09-08 Gateways re-verified running via process check: Alpha default gateway + Bravo (`--profile bravo gateway run`) + Charlie (`--profile charlie gateway run`) all live on shop PC
