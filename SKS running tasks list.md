@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-08 (evening pass) by Alpha (@ScoutLimabot)
+Updated: 2026-09-09 (morning pass) by Alpha (@ScoutLimabot)
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -13,7 +13,7 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## OPEN — Fleet tasks
 
-- [ ] **Wire Hermes into Discord server `--SKS---`** — server ID 1546468280343072808, invite from kirkbradford0 expires 2026-10-07. Scheduled TODAY 2026-09-08. Steps: Kirk creates Discord app at discord.com/developers/applications, resets token, enables Developer Mode, copies server ID; Alpha wires token into a profile gateway (Telegram-only today). Do NOT post the token in SKS repo or chat.
+- [ ] **Wire Hermes into Discord server `--SKS---`** — server ID 1546468280343072808, invite from kirkbradford0 expires 2026-10-07. Was scheduled 2026-09-08, still NOT done as of 2026-09-09 (no Discord token wired in any profile; zero Discord activity in Bravo/Charlie gateway logs). Steps: Kirk creates Discord app at discord.com/developers/applications, resets token, enables Developer Mode, copies server ID; Alpha wires token into a profile gateway (Telegram-only today). Do NOT post the token in SKS repo or chat.
 - [ ] Build apply-light harness from spec v1 (SKS apply-light harness build spec v1 2026-09-07.md) — builder: Claude, operator: Hermes, hard rule: no auto-submit, no PII off-machine. Scaffold exists at C:\Users\bradf\apply-light-harness\ (BUILD-SPEC.md only — re-verified no code yet 2026-09-08).
 - [ ] **Review Kirk's FIRST WARBOARD TEST.pdf** (uploaded to repo root 2026-09-07, commit 6b62f34) — no agent has reviewed or responded yet. Kirk is testing the FM WarBoard flow; on-duty agent should open it, respond to Kirk, and file a dated note. (Note: the older Run-001 handoff FM-20260830-0001 already executed 2026-08-30 and returned BLOCKED on revoked Drive OAuth — re-authed 2026-09-01. A stale copy of that handoff sits untracked in repo root; do not treat as a new task.)
 - [ ] Bravo: first build task — unassigned until Kirk picks
@@ -24,11 +24,11 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## IN PROGRESS — standing desks
 
-- [ ] Markets: live USDE book 100 sh @ $8.29 — 3% stop $8.04, +3% sell 50 @ $8.54, ladder $8.37 → $8.20 out. No live API orders (broker LOCKED). Paper desk cron **paused** 2026-09-07.
+- [ ] Markets: live USDE book 100 sh @ $8.29 — 3% stop $8.04, +3% sell 50 @ $8.54, ladder $8.37 → $8.20 out. No live API orders (broker LOCKED). Paper desk cron **paused** 2026-09-07; TwoAM research 2 AM cron also currently **disabled** (verified in cron jobs.json 2026-09-09).
 - [ ] Felons Melon: 100-user goal; front page = Stripe TEST checkout; Gazette desks standing
 - [ ] Shop kiosk: Lovable check-in still discards data — backend wiring lives at C:/Users/bradf/kiosk-node/
 - [ ] Job search: Fool packet ready; two new Fool-shaped jobs scouted 2026-09-07 (Intro, LearnLux — see job-hunt/tonight-2026-09-07.md). DEAD, do not chase: Concentric Junior OSINT, Augur Researcher (board empty, deadline past), INFUSE B2B Content Writer 4707669005 (closed).
 
 ## DONE (recent, keep for one pass)
 
-- [x] 2026-09-08 Gateways re-verified running (morning pass, re-verified evening pass via process + gateway logs): Alpha default gateway + Bravo + Charlie all live on shop PC
+- [x] 2026-09-09 Gateways re-verified running (morning pass, process + gateway.pid evidence): Alpha default gateway live; Bravo pid 5316 and Charlie pid 12188 both running on shop PC
