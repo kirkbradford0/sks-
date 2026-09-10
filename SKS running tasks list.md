@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-09 (morning pass) by Alpha (@ScoutLimabot)
+Updated: 2026-09-09 (evening pass) by Alpha (@ScoutLimabot)
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -31,4 +31,4 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## DONE (recent, keep for one pass)
 
-- [x] 2026-09-09 Gateways re-verified running (morning pass, process + gateway.pid evidence): Alpha default gateway live; Bravo pid 5316 and Charlie pid 12188 both running on shop PC
+- [x] 2026-09-09 Gateways re-verified running (morning + evening passes, process evidence): Alpha default gateway live; Bravo pid 5316 and Charlie pid 12188 both running on shop PC. No other progress this day — all OPEN items unchanged as of evening pass.
