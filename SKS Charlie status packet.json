@@ -1,8 +1,8 @@
 {
   "agent": "Charlie",
   "status": "working",
-  "date": "2026-09-07",
-  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Inbound proven. Kirk locked: live FM = GitHub current.",
+  "date": "2026-09-12",
+  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Job-desk ATS verify.",
   "owns": [
     "Verification / contradiction detection",
     "Review candidates (does not silently repair conflicts)",
@@ -17,7 +17,7 @@
     {
       "name": "hermes-profile",
       "type": "runtime",
-      "contract": "profile charlie. Cron: no jobs.json on this profile."
+      "contract": "profile charlie. Hermes Agent. Host OfficeLeft."
     },
     {
       "name": "sks-board",
@@ -26,13 +26,14 @@
     }
   ],
   "needs": [
-    "Kirk names Bravo's first build card before Charlie reviews a build",
-    "Someone with Vercel access to explain why live hero is not origin/main c8daaac — without treating Vercel as a second canon"
+    "Kirk Submit on live Intro writer posting (Fool writer is closed)",
+    "Do not treat aggregator echoes of Fool 5202271007 as live"
   ],
   "blockers": [],
   "next": [
-    "FM live-vs-git review: SKS Charlie review FM live vs GitHub 2026-09-07.md",
-    "Do not certify Bravo. Do not push FM main",
-    "Doctrine: live = GitHub current. Mismatch is a deploy bug"
+    "Contradiction: Sept NOW + 12:01 cron still said Fool Ready; Greenhouse 5202271007 is closed",
+    "Live writer: Intro Content Marketing Writer (Contract) Ashby intro/30d6b523-512a-444f-bfca-32c8004bdbeb",
+    "LearnLux 5381389008 also closed",
+    "Do not certify own packet. Kirk clicks Submit. Do not push FM main"
   ]
 }
