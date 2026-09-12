@@ -15,6 +15,15 @@
 - Google OAuth still revoked (invalid_grant since 2026-09-11): Gmail auto-sort + gws dead until Kirk clicks fresh auth link (setup.py --auth-url). Nudged again in session.
 - TwoAM + USDE paper desk crons remain PAUSED (from 2026-09-07).
 
+## Shop-session addendum (2026-09-12 ~02:30, formation brief execution)
+- STORAGE DOCTRINE LIVE: SSD = D: "KIRKSLIMJIM" 4TB. Mirror root D:/sparkpost-brain (brain/ + engine/). boss_sorter.py dual-writes local brain + SSD (soft-degrade if unplugged; SPARKPOST_MIRROR env override for home machine). Console shows mirror status. Brain verified 5/5 files mirrored.
+- FM narrative recon filed (briefs/FM-NARRATIVE-RECON-2026-09-12.md, pushed to repo for Mythos): NO narrative API route exists in any clone — narrative is client-side; core = fm-narrative-engine.ts (806 ln) + fm-prompt-library/narratives.ts; lib/inference/ = engine + pre/post disambiguation; felonsmelon-dev is richest clone.
+- ApHidMonitorService was a red herring: Alps Alpine Dell touchpad helper hung in START_PENDING (NOT_STOPPABLE, no process behind it), unrelated to Hermes. Root fix: service DISABLED via elevated sc.exe (Kirk approved UAC). Clears on next shop reboot.
+- Kill chain staged: briefs/KILL-CHAIN-STAGED-2026-09-12.md (force-added to repo so home machine can read it at 04:30). MF confirmed Ready. Fresh OAuth URL staged BUT ~30-min expiry — regenerate at 04:30 via google-workspace setup.py --auth-url. GAP: SPARKPOST_TARGET_PACKAGE_20260912.md NOT on shop machine — Mythos must re-stage or home machine pulls it.
+- Bravo recon (brain/name 2026-09-12, verified live): OWID Senior Data Writer remote £80–120K w/ paid residency; VOA Utah Grant Writer SLC hybrid $60–65K fair-chance-friendly (only W-2 option); OpenTrain AI Technical Writer RLHF fully remote $90–140/hr pt-time (2–3x MF rate, stacks). Recon only, nothing applied.
+- Charlie Venmo report (briefs/VENMO-LANE-REPORT-2026-09-12.md): skip Venmo/Braintree API (~3.49%+$0.49); use free Venmo Business Profile (1.9%+$0.10, cheaper than Stripe) + pre-filled QR codes on site; run discounts in Stripe coupons not Venmo; manual reconcile OK at low volume. All steps gated on Kirk (profile, QRs, placement).
+- Session closed per doctrine: brain 5/5 + engine mirrored to SSD; repo HEAD 2a7b1e2 pushed. Shop machine next boot: ApHidMonitorService gone from StartPending.
+
 ## Next
 - Venmo payment lane on felonsmelons.com (design + integration; Kirk approves before anything goes live).
 - SEAL 7 (Claude sidecar) stays dry until a key exists — unchanged rule.
