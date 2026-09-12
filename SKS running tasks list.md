@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-11 (morning pass) by Alpha (@ScoutLimabot)
+Updated: 2026-09-12 (morning pass) by Alpha (@ScoutLimabot)
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -10,6 +10,7 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 - [ ] Click Submit on Motley Fool packet (Greenhouse 5202271007) — packet ready in Job Applications
 - [ ] Pick first Bravo build target (Lane 1 Felons Melon K3 on a branch — shop kiosk is parked until FM works)
 - [ ] Say go / no-go on the two new Fool-shaped scouted jobs (Intro contract writer $50–100/hr via Ashby; LearnLux financial content writer Greenhouse 5381389008) — scout-only until Kirk says go (job-hunt/tonight-2026-09-07.md)
+- [ ] Click a fresh Google auth link (setup.py --auth-url) — Google OAuth token revoked again 2026-09-11 (invalid_grant); Gmail auto-sort + gws CLI dead until re-authed. Gates Drive-based flows (WarBoard etc.)
 
 ## OPEN — Fleet tasks
 
@@ -31,4 +32,4 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## DONE (recent, keep for one pass)
 
-- [x] 2026-09-11 Gateways re-verified running (process list evidence): Alpha default gateway pid 1932 (pythonw), Bravo pid 5316, Charlie pid 12188. Telegram-only. All OPEN items unchanged since 2026-09-09 evening: no Discord token, harness still BUILD-SPEC.md only, WarBoard PDF still unreviewed, Fool packet still awaiting Kirk's Submit, TwoAM + paper desk crons still paused.
+- (none this pass — 2026-09-11 gateway re-verification pruned; all OPEN items re-verified unchanged 2026-09-12)
