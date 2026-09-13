@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-12 (18:02 pass) by Hermes cron "SKS running tasks"
+Updated: 2026-09-13 (00:05 pass) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -16,7 +16,7 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## OPEN — Fleet tasks
 
-- [ ] **Execute kill chain on home-machine sortie (2026-09-13 04:30)** — briefs/KILL-CHAIN-STAGED-2026-09-12.md in this repo. UPDATED 2026-09-12 18:00: step 1 (MF submit) is DEAD — the money lane is now the Intro Ashby submit (Kirk clicks, see Kirk owes). Steps: (1) Intro submit, (2) regenerate fresh Google OAuth link (setup.py --auth-url) at 04:30, Kirk clicks, verify Gmail auto-sort + gws recover, (3) collect/re-stage SPARKPOST_TARGET_PACKAGE_20260912.md (was NOT on shop machine; Mythos holds it or home pulls from sparkpost repo).
+- [ ] **Execute kill chain on home-machine sortie (2026-09-13 04:30)** — brief is at sparkpost repo `briefs/KILL-CHAIN-STAGED-2026-09-12.md` (NOT in this sks- repo — path corrected 2026-09-13 00:05). UPDATED 2026-09-12 18:00: step 1 (MF submit) is DEAD — the money lane is now the Intro Ashby submit (Kirk clicks, see Kirk owes). Steps: (1) Intro submit, (2) regenerate fresh Google OAuth link (setup.py --auth-url) at 04:30, Kirk clicks, verify Gmail auto-sort + gws recover, (3) collect/re-stage SPARKPOST_TARGET_PACKAGE_20260912.md (was NOT on shop machine; Mythos holds it or home pulls from sparkpost repo).
 - [ ] **Wire Hermes into Discord server `--SKS---`** — server ID 1546468280343072808, invite from kirkbradford0 expires 2026-10-07. Still NOT done (no Discord token wired in any profile). Steps: Kirk creates Discord app at discord.com/developers/applications, resets token, enables Developer Mode, copies server ID; Alpha wires token into a profile gateway. Do NOT post the token in SKS repo or chat.
 - [ ] Build apply-light harness from spec v1 (SKS apply-light harness build spec v1 2026-09-07.md) — builder: Claude, operator: Hermes, hard rule: no auto-submit, no PII off-machine. Scaffold exists at C:\Users\bradf\apply-light-harness\ (BUILD-SPEC.md only).
 - [ ] **Review Kirk's FIRST WARBOARD TEST.pdf** (repo root, uploaded 2026-09-07, commit 6b62f34) — still unreviewed as of 2026-09-12 06:00. On-duty agent: open it, respond to Kirk, file a dated note.
