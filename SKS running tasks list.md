@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-13 (12:01 pass) by Hermes cron "SKS running tasks"
+Updated: 2026-09-14 (06:05 pass) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -16,10 +16,11 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## OPEN — Fleet tasks
 
-- [ ] **Execute kill chain on home-machine sortie (2026-09-13 04:30)** — brief is at sparkpost repo `briefs/KILL-CHAIN-STAGED-2026-09-12.md` (NOT in this sks- repo — path corrected 2026-09-13 00:05). **UPDATE 2026-09-13 12:01: sortie window PASSED with no evidence of execution** — no pushed handoff, no fresh OAuth link (token mtime still 2026-09-01, still invalid_grant), no SPARKPOST_TARGET_PACKAGE_20260912.md anywhere reachable, no new briefs. Needs Kirk or the next on-duty session to re-run it. UPDATED 2026-09-12 18:00: step 1 (MF submit) is DEAD — the money lane is now the Intro Ashby submit (Kirk clicks, see Kirk owes). Steps: (1) Intro submit, (2) regenerate fresh Google OAuth link (setup.py --auth-url), Kirk clicks, verify Gmail auto-sort + gws recover, (3) collect/re-stage SPARKPOST_TARGET_PACKAGE_20260912.md (was NOT on shop machine; Mythos holds it or home pulls from sparkpost repo).
+- [ ] **Execute kill chain on home-machine sortie (2026-09-13 04:30)** — brief is at sparkpost repo `briefs/KILL-CHAIN-STAGED-2026-09-12.md` (NOT in this sks- repo — path corrected 2026-09-13 00:05). **UPDATE 2026-09-14 06:05: a fresh OAuth pending flow WAS staged 2026-09-13 11:28 (google_oauth_pending.json exists) but the token was never exchanged — google_token.json mtime still 2026-09-01, still invalid_grant. That link is expired; regenerate fresh.** Sortie window 2026-09-13 04:30 passed with no evidence of execution — no pushed handoff, no SPARKPOST_TARGET_PACKAGE_20260912.md anywhere reachable, no new briefs. Needs Kirk or the next on-duty session to re-run it. UPDATED 2026-09-12 18:00: step 1 (MF submit) is DEAD — the money lane is now the Intro Ashby submit (Kirk clicks, see Kirk owes). Steps: (1) Intro submit, (2) regenerate fresh Google OAuth link (setup.py --auth-url), Kirk clicks, verify Gmail auto-sort + gws recover, (3) collect/re-stage SPARKPOST_TARGET_PACKAGE_20260912.md (was NOT on shop machine; Mythos holds it or home pulls from sparkpost repo).
 - [ ] **Wire Hermes into Discord server `--SKS---`** — server ID 1546468280343072808, invite from kirkbradford0 expires 2026-10-07. Still NOT done (no Discord token wired in any profile). Steps: Kirk creates Discord app at discord.com/developers/applications, resets token, enables Developer Mode, copies server ID; Alpha wires token into a profile gateway. Do NOT post the token in SKS repo or chat.
 - [ ] Build apply-light harness from spec v1 (SKS apply-light harness build spec v1 2026-09-07.md) — builder: Claude, operator: Hermes, hard rule: no auto-submit, no PII off-machine. Scaffold exists at C:\Users\bradf\apply-light-harness\ (BUILD-SPEC.md only).
-- [ ] **Review Kirk's FIRST WARBOARD TEST.pdf** (repo root, uploaded 2026-09-07, commit 6b62f34) — still unreviewed as of 2026-09-12 06:00. On-duty agent: open it, respond to Kirk, file a dated note.
+- [ ] **WARBOARD PRIORITY ONE (Kirk 9/7/26, reviewed 2026-09-14): simplify Felons Melon into a simple buy** — one story, one one-time fee, one letter to sign and hand in. À-la-carte add-ons; Kirk's favorite = **Clear My Warrant Letter** (pull records, write what the courts ask for, reasonable dollar to close / PTA route). Full read: `SKS Hermes warboard review 2026-09-14.md`. Fits 2026-09-12 client-side narrative doctrine; scope/pricing gated by Kirk.
+- [ ] Recovery companion AI ($5–10 talk/type lane for people in recovery) — warboard idea 9/7/26, "would be a life saver." Idea only; needs Kirk go/no-go before any build.
 - [ ] GEV integration next lane: Utah camera pack (UDOT feeds) → FM service-finder mode, per briefs/GEV-INTEGRATION-PLAN-2026-09-12.md in sparkpost repo. Launcher (gev_button.py) done; keyless instance runs localhost:4173 via `npm run dev`.
 - [ ] Bravo: first build task — unassigned until Kirk picks
 - [ ] Charlie: first **build** review waits on Kirk naming Bravo's card. Live-vs-git review already filed.
@@ -37,8 +38,4 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 
 ## DONE (recent, keep for one pass)
 
-- [x] 2026-09-12: Fool ATS closure verified by Charlie (origin commit 8cec618) — Greenhouse 5202271007 + LearnLux 5381389008 closed; MF packet quarantined to Job Applications\_dead\, ledger rewritten, Intro packet built (⬜ Ready, Ashby live, fields pulled from form)
-- [x] 2026-09-12: SSD storage doctrine live on shop machine — D:/sparkpost-brain mirror (brain/ + engine/), boss_sorter.py dual-writes with soft-degrade; brain verified 5/5 mirrored (handoff addendum)
-- [x] 2026-09-12: SparkPost founder side live — private repo kirkbradford0/sparkpost pushed, console v0, boss sorter archive fix (selftest 6/6), heartbeat cron created (heartbeat ran 09-13 08:01, commit 713cd96)
-- [x] 2026-09-12: FM narrative recon filed (briefs/FM-NARRATIVE-RECON-2026-09-12.md) — confirmed NO narrative API route; narrative is client-side
-- [x] 2026-09-12: Venmo lane decision made (briefs/VENMO-LANE-REPORT-2026-09-12.md) — skip Venmo/Braintree API; free Business Profile + QR codes + Stripe coupons
+- [x] 2026-09-14: FIRST WARBOARD TEST.pdf reviewed at last (scanned 1-pg, no text layer → rendered + vision-OCR transcribed) — note filed: `SKS Hermes warboard review 2026-09-14.md`. Content = Kirk's 9/7/26 directive to all bots (see new OPEN items). Kirk response: this cron report + the note.
