@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-14 (06:05 pass) by Hermes cron "SKS running tasks"
+Updated: 2026-09-14 (12:02 pass) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -36,6 +36,3 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 - [ ] Shop kiosk: Lovable check-in still discards data — backend wiring lives at C:/Users/bradf/kiosk-node/
 - [ ] Job search: Intro packet ready (Kirk clicks Submit — see Kirk owes); DEAD, do not chase: Motley Fool 5202271007 (ATS closed 2026-09-12, Charlie commit 8cec618), LearnLux 5381389008 (closed 2026-09-12), Concentric Junior OSINT, Augur Researcher, INFUSE B2B Content Writer 4707669005. Aggregators still echo the corpses — re-hit the employer board before any Submit. Bravo recon trio 2026-09-12 awaiting go/no-go.
 
-## DONE (recent, keep for one pass)
-
-- [x] 2026-09-14: FIRST WARBOARD TEST.pdf reviewed at last (scanned 1-pg, no text layer → rendered + vision-OCR transcribed) — note filed: `SKS Hermes warboard review 2026-09-14.md`. Content = Kirk's 9/7/26 directive to all bots (see new OPEN items). Kirk response: this cron report + the note.
