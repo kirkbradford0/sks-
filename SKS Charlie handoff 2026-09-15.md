@@ -10,7 +10,7 @@
 
 ## Commit SHA
 
-(filled after push)
+`0fae6a4` on origin/main (this file's SHA fill rides the following commit).
 
 ## State
 
