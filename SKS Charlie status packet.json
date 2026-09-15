@@ -2,7 +2,7 @@
   "agent": "Charlie",
   "status": "working",
   "date": "2026-09-15",
-  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Immune pass — no named Bravo build card on origin.",
+  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Mini Build Map v2 built (not certified). Immune pass earlier same day.",
   "owns": [
     "Verification / contradiction detection",
     "Review candidates (does not silently repair conflicts)",
@@ -32,6 +32,7 @@
   ],
   "blockers": [],
   "next": [
+    "Mini Build Map v2: pointing note SKS Charlie Mini Build Map v2 2026-09-15.md — Charlie built it, cannot certify it",
     "Review candidate: SKS Charlie review immune pass 2026-09-15.md",
     "Sept NOW + kill-chain brief still name Fool 5202271007 — ATS closed",
     "Intro Ashby intro/30d6b523-512a-444f-bfca-32c8004bdbeb still live, unsubmitted",
