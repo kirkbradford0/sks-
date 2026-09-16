@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-14 (12:02 pass) by Hermes cron "SKS running tasks"
+Updated: 2026-09-15 (evening pass) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 
@@ -10,7 +10,8 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 - [ ] Click Submit on **Intro — Content Marketing Writer (Contract)** (Ashby `jobs.ashbyhq.com/intro/30d6b523-512a-444f-bfca-32c8004bdbeb`, $50–100/hr remote US) — packet ready at Job Applications\Intro_Content_Marketing_Writer_2026-09-12\; ledger row 1 ⬜ Ready (verified 2026-09-12 18:00). NOTE: Motley Fool 5202271007 is DEAD (ATS closed, packet quarantined to _dead/, ledger 💀) — do not submit Fool.
 - [ ] Go/no-go on Bravo recon trio (brain/name 2026-09-12, verified live): OWID Senior Data Writer (remote £80–120K, paid residency); VOA Utah Grant Writer (SLC hybrid $60–65K, only W-2 option, fair-chance-friendly); OpenTrain AI Technical Writer RLHF (fully remote $90–140/hr part-time, stacks with MF contract). Recon only — nothing applied.
 - [ ] Venmo lane gate (briefs/VENMO-LANE-REPORT-2026-09-12.md): Kirk approves Venmo Business Profile setup + pre-filled QR codes + placement on felonsmelons.com before anything goes live. Discounts run in Stripe coupons, not Venmo.
-- [ ] Pick first Bravo build target (Lane 1 Felons Melon K3 on a branch — shop kiosk is parked until FM works)
+- [ ] Pick first Bravo build target (Lane 1 Felons Melon K3 on a branch — shop kiosk is parked until FM works). Charlie 2026-09-15: if the sortie was a Bravo build review, NAME the card — no named card, no review.
+- [ ] **Open + sign Charlie's Mini Build Map v2** (handoff 2026-09-15, built, not certified): one card, five workflow columns, local sidecar `mini-build-map/index.html` (NOT in sks- repo), schema `types/build-map.ts`, `?autotest=1` → VERIFIED. Kirk opens it; if the map is the sortie, Charlie reviews Alpha/Bravo cards on it once signed. Pointing note: `SKS Charlie Mini Build Map v2 2026-09-15.md`.
 - [ ] Say go / no-go on the two new Fool-shaped scouted jobs — COLLAPSED 2026-09-12 18:00: LearnLux 5381389008 closed (no-go by reality); Intro promoted to the live Submit item above.
 - [ ] Click a fresh Google auth link (google-workspace setup.py --auth-url) — OAuth token revoked since 2026-09-11 (invalid_grant); Gmail auto-sort + gws CLI dead until re-authed. NOTE: staged link expires ~30 min — regenerate fresh at the 04:30 home-machine sortie instead of using the stale one.
 
@@ -23,7 +24,7 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 - [ ] Recovery companion AI ($5–10 talk/type lane for people in recovery) — warboard idea 9/7/26, "would be a life saver." Idea only; needs Kirk go/no-go before any build.
 - [ ] GEV integration next lane: Utah camera pack (UDOT feeds) → FM service-finder mode, per briefs/GEV-INTEGRATION-PLAN-2026-09-12.md in sparkpost repo. Launcher (gev_button.py) done; keyless instance runs localhost:4173 via `npm run dev`.
 - [ ] Bravo: first build task — unassigned until Kirk picks
-- [ ] Charlie: first **build** review waits on Kirk naming Bravo's card. Live-vs-git review already filed.
+- [ ] Charlie: first **build** review waits on Kirk naming Bravo's card. Live-vs-git review already filed. 2026-09-15: ran immune pass instead (`SKS Charlie review immune pass 2026-09-15.md` — review candidate, no named card), re-hit live ATS (Fool still closed, Intro still live unsubmitted, OpenTrain recon URL dead, OWID+VOA still live). Built Mini Build Map v2 sidecar — see Kirk owes.
 - [ ] MedicBot: start gateway once Telegram bot exists
 - [ ] Qwen (home computer): standby until Kirk wires it into SKS
 - [ ] GrokBot: stays parked, zero spend, until Kirk funds it
@@ -31,7 +32,7 @@ Rule: anything in the works or incomplete lives here. Done items get struck and 
 ## IN PROGRESS — standing desks
 
 - [ ] Markets: live USDE book 100 sh @ $8.29 — 3% stop $8.04, +3% sell 50 @ $8.54, ladder $8.37 → $8.20 out. No live API orders (broker LOCKED). Paper desk cron **paused** 2026-09-07; TwoAM research 2 AM cron also currently **disabled** (verified 2026-09-09).
-- [ ] Felons Melon: 100-user goal; front page = Stripe TEST checkout; Gazette desks standing. Narrative doctrine (2026-09-12): client-side only, core = fm-narrative-engine.ts (806 ln) + fm-prompt-library/narratives.ts in felonsmelon-dev (richest clone); pro paywall needs server-side enforcement before real money. Venmo lane next (design + integration, Kirk gates).
+- [ ] Felons Melon: 100-user goal; front page = Stripe TEST checkout; Gazette desks standing. Narrative doctrine (2026-09-12): client-side only, core = fm-narrative-engine.ts (806 ln) + fm-prompt-library/narratives.ts in felonsmelon-dev (richest clone); pro paywall needs server-side enforcement before real money. Venmo lane next (design + integration, Kirk gates). FM hero mismatch re-verified by Charlie 2026-09-15: live hero "Your story. Told right." vs origin/main `c8daaac` "You left with nothing." — unchanged since 2026-09-07.
 - [ ] SparkPost (C:/Users/bradf/sparkpost, repo kirkbradford0/sparkpost): heartbeat cron daily 08:00 (digest → inbox → boss sorter → brain; never touches brain/PII). STORAGE DOCTRINE: session ends with full SSD sync (D:/sparkpost-brain) + GitHub push; brain (PII) never in repos/cloud. Console: python sparkpost_console.py. GEV launcher button done (5abbc1e).
 - [ ] Shop kiosk: Lovable check-in still discards data — backend wiring lives at C:/Users/bradf/kiosk-node/
 - [ ] Job search: Intro packet ready (Kirk clicks Submit — see Kirk owes); DEAD, do not chase: Motley Fool 5202271007 (ATS closed 2026-09-12, Charlie commit 8cec618), LearnLux 5381389008 (closed 2026-09-12), Concentric Junior OSINT, Augur Researcher, INFUSE B2B Content Writer 4707669005. Aggregators still echo the corpses — re-hit the employer board before any Submit. Bravo recon trio 2026-09-12 awaiting go/no-go.
