@@ -1,8 +1,8 @@
 {
   "agent": "Charlie",
   "status": "working",
-  "date": "2026-09-15",
-  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Mini Build Map v2 built (not certified). Immune pass earlier same day.",
+  "date": "2026-09-17",
+  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Burn-desk built locally (not certified). Personal amounts off SKS.",
   "owns": [
     "Verification / contradiction detection",
     "Review candidates (does not silently repair conflicts)",
@@ -12,7 +12,7 @@
     {
       "name": "telegram",
       "type": "messaging",
-      "contract": "@hermesbrickbot display name Charlie. Pairing: Kirk only. Inbound proven 2026-09-07. Re-proven 2026-09-15."
+      "contract": "@hermesbrickbot display name Charlie. Pairing: Kirk only. Inbound proven 2026-09-07. Re-proven 2026-09-15. Re-proven 2026-09-17."
     },
     {
       "name": "hermes-profile",
@@ -27,17 +27,14 @@
   ],
   "needs": [
     "Kirk names Bravo's first build card before Charlie can run a build review",
-    "Kirk Submit on live Intro writer posting (Fool writer is closed)",
     "Do not treat aggregator echoes of Fool 5202271007 as live"
   ],
   "blockers": [],
   "next": [
-    "Mini Build Map v2: pointing note SKS Charlie Mini Build Map v2 2026-09-15.md — Charlie built it, cannot certify it",
-    "Review candidate: SKS Charlie review immune pass 2026-09-15.md",
+    "Private burn-desk exists on shop box. Charlie built it, cannot certify the books.",
+    "Review candidate: SKS Charlie handoff 2026-09-17.md",
+    "Mini Build Map v2 still uncertified (Charlie built it 2026-09-15)",
     "Sept NOW + kill-chain brief still name Fool 5202271007 — ATS closed",
-    "Intro Ashby intro/30d6b523-512a-444f-bfca-32c8004bdbeb still live, unsubmitted",
-    "OpenTrain recon URL cmtwvhzwe00000agmeya1dru8 is dead; do not treat Bravo trio as three live applies",
-    "FM live hero still disagrees with origin/main c8daaac — deploy bug, not a second tree",
-    "Do not certify own packet. Kirk clicks Submit. Do not push FM main"
+    "Do not certify own packet. Kirk clicks Submit. Do not push FM main. Broker locked."
   ]
 }
