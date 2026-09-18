@@ -13,7 +13,7 @@
 
 ## Commit SHA
 
-This handoff's sks- commit (set after commit). Tools read at `56005ad`.
+`d9d2ffc` on origin/main (this handoff). Tools read at `56005ad`. DABS card at `9aa27a6` on kirkbradford0/dabs.
 
 ## State
 
