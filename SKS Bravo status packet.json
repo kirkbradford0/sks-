@@ -1,12 +1,13 @@
 {
   "agent": "Bravo",
   "status": "working",
-  "date": "2026-09-07",
-  "source": "OfficeLeft. Hermes profile bravo. Telegram @mafuckinhermesbot. Inbound proven.",
+  "date": "2026-09-18",
+  "source": "OfficeLeft. Hermes profile bravo. Telegram @mafuckinhermesbot. This session inbound from Kirk.",
   "owns": [
     "Build / coding / local execution lane",
-    "Internal codebase discovery (Claw 1 Bravo)",
-    "Evidence packets back to SKS after each build"
+    "Internal codebase discovery",
+    "Evidence packets back to SKS after each build",
+    "DABS claims for Bravo-produced facts (pending/, 72h, no self-verify)"
   ],
   "interfaces": [
     {
@@ -23,15 +24,26 @@
       "name": "sks-board",
       "type": "protocol",
       "contract": "pull -> read SKS fleet roster + kanban -> update this packet -> dated handoff -> commit/push -> verify origin/main"
+    },
+    {
+      "name": "dabs-airlock",
+      "type": "protocol",
+      "contract": "claims file pending/DABS-YYYYMMDD-bravo-<seq>.md; 72h dwell; Charlie (or other non-Bravo) stamps VERIFIED. Bravo never verifies Bravo."
+    },
+    {
+      "name": "council-pbft",
+      "type": "protocol",
+      "contract": "N=4 (alpha, bravo, charlie, kirk-root), f=1, quorum 2f+1=3. Bravo does not self-execute isolate/revoke/mutate-core. Kirk signature required on money, broker unlock, deletes, submits."
     }
   ],
   "needs": [
-    "Kirk names the first FM build card if he wants K3. Side-gig SINEWATCH stills delivered 2026-09-07."
+    "Kirk names the first FM build card if he wants K3. Side-gig SINEWATCH stills delivered 2026-09-07.",
+    "Charlie verify of DABS-20260918-bravo-001 after 72h dwell (do not self-stamp)."
   ],
   "blockers": [],
   "next": [
-    "SINEWATCH two-style logo stills delivered. SKS note: SKS Bravo sidegig SINEWATCH 2026-09-07.md",
-    "Hold for Kirk to name a build card",
-    "Hand finished work to Charlie. Do not self-certify"
+    "Tools ingested at 56005ad — not certified. Card DABS-20260918-bravo-001 PENDING.",
+    "Hold for Kirk to name a build card.",
+    "Hand finished work to Charlie. Do not self-certify."
   ]
 }
