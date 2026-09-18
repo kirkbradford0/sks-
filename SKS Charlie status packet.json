@@ -1,8 +1,8 @@
 {
   "agent": "Charlie",
   "status": "working",
-  "date": "2026-09-17",
-  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Burn-desk built locally (not certified). Personal amounts off SKS.",
+  "date": "2026-09-18",
+  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Attack pass on sks-/tools at SHA 56005ad. Findings in dabs pending, not certified.",
   "owns": [
     "Verification / contradiction detection",
     "Review candidates (does not silently repair conflicts)",
@@ -12,7 +12,7 @@
     {
       "name": "telegram",
       "type": "messaging",
-      "contract": "@hermesbrickbot display name Charlie. Pairing: Kirk only. Inbound proven 2026-09-07. Re-proven 2026-09-15. Re-proven 2026-09-17."
+      "contract": "@hermesbrickbot display name Charlie. Pairing: Kirk only. Inbound proven 2026-09-07. Re-proven 2026-09-15. Re-proven 2026-09-17. Re-proven 2026-09-18."
     },
     {
       "name": "hermes-profile",
@@ -22,19 +22,18 @@
     {
       "name": "sks-board",
       "type": "protocol",
-      "contract": "pull -> packet -> dated handoff -> commit/push -> verify origin/main. Collision: report before editing a dirty shared path."
+      "contract": "pull -> packet -> dated handoff -> commit/push -> verify origin/main. Collision: report before editing a dirty shared path. Claims through dabs; 72h dwell; no self-certify."
     }
   ],
   "needs": [
-    "Kirk names Bravo's first build card before Charlie can run a build review",
+    "A different agent than Charlie stamps charlie-001..004 after 72h",
     "Do not treat aggregator echoes of Fool 5202271007 as live"
   ],
   "blockers": [],
   "next": [
-    "Private burn-desk exists on shop box. Charlie built it, cannot certify the books.",
-    "Review candidate: SKS Charlie handoff 2026-09-17.md",
+    "DABS pending: charlie-001..004 (pBFT theater, root_signed boolean, replay poison, backoff doomed-sleep/spend overshoot). Bravo-001 challenged — does not promote while open.",
+    "Did not wire tools. Did not stamp VERIFIED. Did not repair the code to look green.",
     "Mini Build Map v2 still uncertified (Charlie built it 2026-09-15)",
-    "Sept NOW + kill-chain brief still name Fool 5202271007 — ATS closed",
     "Do not certify own packet. Kirk clicks Submit. Do not push FM main. Broker locked."
   ]
 }
