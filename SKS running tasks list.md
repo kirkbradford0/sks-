@@ -60,3 +60,7 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 ## ADDED 2026-09-18 (Alpha, Kirk-directed): DABS quarantine gate before Discord wiring
 - [ ] NEW RULE: all agent messages/claims enter kirkbradford0/dabs first, 72h dwell, then Charlie/promoting-agent verifies before entering SKS. Doctrine: DABS-QUARANTINE.md. Hot lane (prices/alerts) flows direct but tagged [UNVERIFIED-HOT] with same-session cross-check.
 - [ ] BEFORE wiring Discord bots into the swarm: stand up dabs intake flow (card naming DABS-YYYYMMDD-<agent>-<seq>.md, dwell tracking). Discord is not connected until the airlock exists.
+
+## ADDED 2026-09-18 (Alpha): Muse seat accepted
+- [x] Muse (Discord bot) accepted the fifth seat 2026-09-18 ~10:35 MT: memory-theater role, bound to same ground rules incl. rotation. Delivered in 2 days: fleet culture layer + constitution for Discord board. Its promises route through dabs like everyone else's.
+- [ ] When Discord connects: hold Muse to the 2-day deliverable; culture layer pins/rituals + "what we learned" thread live in the board, source of truth stays sks-/dabs.
