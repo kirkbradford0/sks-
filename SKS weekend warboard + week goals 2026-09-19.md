@@ -71,6 +71,21 @@ The simple-buy version of FM: one story, one fee, one letter to sign. Draft the 
 - No pitch emails leave felonsmelon@gmail.com until WB-01 is Charlie-verified
 - PII stays out of sks-; brain stays on SSD
 
+## ⚠️ INTAKE LANDMINE — case status & privilege (Kirk, 2026-09-19)
+
+**Rule for the inference agent's intake flow:** the FIRST thing we establish with any user is whether they have an **open case** — and open-case users are a hard special-handling class.
+
+Why: the moment an open-case user's data sits in a third-party cloud (Supabase, any hosted DB, any cloud sync), that data is held by a third party. No attorney-client privilege attaches. It becomes discoverable — subpoena-able **by a criminal defense attorney, but also by a prosecutor**. The "process in between" (upload → cloud → back) converts protected intake into evidence.
+
+Standing handling rules until Kirk amends:
+1. Intake asks case status first: open / closed / none / prefer-not-to-say.
+2. **Open-case answers stay LOCAL-ONLY.** Never leave the machine — no Supabase, no cloud, no repo, no chat dump. Tag: `[OPEN-CASE-LOCAL]`.
+3. Closed/none answers can use the normal (still minimal-data) pipeline.
+4. The product never claims confidentiality it can't deliver. If data isn't privileged, the UI/letters must not imply it is.
+5. Attorney-tier (WB-02) work product under a licensed attorney's supervision is the only lane where privilege can ever attach — that's why the B2B lane is the gold.
+
+DABS card: `DABS-20260919-alpha-001` (filed same day — case-status intake rule).
+
 ## The honest stall risk
 
 Kirk's two clicks (W4) are the single point of failure — everything I can do without them I'll do this weekend anyway, but the Intro application has been "ready" since 09-12. Five minutes, Kirk. It's the highest-paid 5 minutes available this week.
