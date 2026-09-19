@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-17 (pass 3) by Hermes cron "SKS running tasks"
+Updated: 2026-09-18 (evening pass 3) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -41,7 +41,7 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 - [ ] GEV integration next lane: Utah camera pack (UDOT feeds) → FM service-finder mode, per briefs/GEV-INTEGRATION-PLAN-2026-09-12.md in sparkpost repo. Launcher (gev_button.py) done; keyless instance runs localhost:4173 via `npm run dev`.
   route: bravo · tier: worker · basis: integration build, plan already written
 - [ ] Bravo: first build task — unassigned until Kirk picks (see Kirk owes)
-- [ ] Charlie: first **build** review waits on Kirk naming Bravo's card. Live-vs-git review already filed. 2026-09-15: ran immune pass (`SKS Charlie review immune pass 2026-09-15.md`), built Mini Build Map v2 — see Kirk owes. 2026-09-17: built private burn-desk on shop box (see standing desks); packet re-proven same day.
+- [ ] Charlie: first **build** review waits on Kirk naming Bravo's card. Live-vs-git review already filed. 2026-09-15: ran immune pass (`SKS Charlie review immune pass 2026-09-15.md`), built Mini Build Map v2 — see Kirk owes. 2026-09-17: built private burn-desk on shop box (see standing desks); packet re-proven same day. 2026-09-18: attack pass on tools@56005ad filed as dabs charlie-001..004 (see handoff); operational skills moved to private `kirkbradford0/sks-skills` vault — public `sks-/skills/` is a boundary stub only.
   route: charlie · tier: worker · basis: verification is Charlie's role
 - [ ] MedicBot: start gateway once Telegram bot exists (Kirk names it — see Kirk owes)
 - [ ] Qwen (home computer): standby until Kirk wires it into SKS
@@ -61,6 +61,13 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 - [ ] NEW RULE: all agent messages/claims enter kirkbradford0/dabs first, 72h dwell, then Charlie/promoting-agent verifies before entering SKS. Doctrine: DABS-QUARANTINE.md. Hot lane (prices/alerts) flows direct but tagged [UNVERIFIED-HOT] with same-session cross-check.
 - [ ] BEFORE wiring Discord bots into the swarm: stand up dabs intake flow (card naming DABS-YYYYMMDD-<agent>-<seq>.md, dwell tracking). Discord is not connected until the airlock exists.
 
+## ADDED 2026-09-18 (Charlie passoff — packet + passoff in LOCAL clone, UNCOMMITTED)
+
+- [ ] WB-03 legal-content verification harness (war board) — Charlie's card, due **2026-10-02**, not started. Bravo owns WB-02. Resume via private skill `charlie-fm-api-passoff` in `kirkbradford0/sks-skills` (instructions stay in private vault, not sks-). SOURCE CAUTION: WB-02/WB-03 assignment exists only in Charlie's local `SKS Charlie status packet.json` edit + `SKS Charlie passoff 2026-09-18.md`, both UNCOMMITTED in the home clone as of this pass (packet says "working") — Charlie/Hermes-charlie should commit + push per passoff protocol; this list records the pointer only.
+  route: charlie · tier: worker · basis: verification harness is Charlie's role
+- [ ] Commit + push Charlie's uncommitted 2026-09-18 state: status packet edit, skills/README.md note, `SKS Charlie passoff 2026-09-18.md` (untracked). Home-clone cron left them untouched to avoid collision with a live Charlie session.
+  route: charlie (or next on-duty Hermes after confirming Charlie idle) · tier: worker · basis: passoff protocol — dated handoffs commit before session end
+
 ## ADDED 2026-09-18 (Alpha): Muse seat accepted
-- [x] Muse (Discord bot) accepted the fifth seat 2026-09-18 ~10:35 MT: memory-theater role, bound to same ground rules incl. rotation. Delivered in 2 days: fleet culture layer + constitution for Discord board. Its promises route through dabs like everyone else's.
-- [ ] When Discord connects: hold Muse to the 2-day deliverable; culture layer pins/rituals + "what we learned" thread live in the board, source of truth stays sks-/dabs.
+
+- [ ] When Discord connects: hold Muse to the 2-day deliverable (culture layer pins/rituals + "what we learned" thread in the board, due ~2026-09-20); source of truth stays sks-/dabs. (Muse accepted the fifth seat 2026-09-18 ~10:35 MT — struck from list per done-removal rule.)
