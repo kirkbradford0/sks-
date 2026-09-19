@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-18 (evening pass 3) by Hermes cron "SKS running tasks"
+Updated: 2026-09-19 (early pass 0002 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -61,12 +61,10 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 - [ ] NEW RULE: all agent messages/claims enter kirkbradford0/dabs first, 72h dwell, then Charlie/promoting-agent verifies before entering SKS. Doctrine: DABS-QUARANTINE.md. Hot lane (prices/alerts) flows direct but tagged [UNVERIFIED-HOT] with same-session cross-check.
 - [ ] BEFORE wiring Discord bots into the swarm: stand up dabs intake flow (card naming DABS-YYYYMMDD-<agent>-<seq>.md, dwell tracking). Discord is not connected until the airlock exists.
 
-## ADDED 2026-09-18 (Charlie passoff — packet + passoff in LOCAL clone, UNCOMMITTED)
+## ADDED 2026-09-18 (Charlie passoff — source committed 1cbe40f 2026-09-19)
 
-- [ ] WB-03 legal-content verification harness (war board) — Charlie's card, due **2026-10-02**, not started. Bravo owns WB-02. Resume via private skill `charlie-fm-api-passoff` in `kirkbradford0/sks-skills` (instructions stay in private vault, not sks-). SOURCE CAUTION: WB-02/WB-03 assignment exists only in Charlie's local `SKS Charlie status packet.json` edit + `SKS Charlie passoff 2026-09-18.md`, both UNCOMMITTED in the home clone as of this pass (packet says "working") — Charlie/Hermes-charlie should commit + push per passoff protocol; this list records the pointer only.
+- [ ] WB-03 legal-content verification harness (war board) — Charlie's card, due **2026-10-02**, not started. Bravo owns WB-02. Resume via private skill `charlie-fm-api-passoff` in `kirkbradford0/sks-skills` (instructions stay in private vault, not sks-). Source state now COMMITTED 2026-09-19 (1cbe40f): `SKS Charlie status packet.json` (status "working"), `skills/README.md` overflow note, `SKS Charlie passoff 2026-09-18.md`. SparkPost-as-skill not yet written.
   route: charlie · tier: worker · basis: verification harness is Charlie's role
-- [ ] Commit + push Charlie's uncommitted 2026-09-18 state: status packet edit, skills/README.md note, `SKS Charlie passoff 2026-09-18.md` (untracked). Home-clone cron left them untouched to avoid collision with a live Charlie session.
-  route: charlie (or next on-duty Hermes after confirming Charlie idle) · tier: worker · basis: passoff protocol — dated handoffs commit before session end
 
 ## ADDED 2026-09-18 (Alpha): Muse seat accepted
 
