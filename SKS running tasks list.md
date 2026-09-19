@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-19 (early pass 0002 MT) by Hermes cron "SKS running tasks"
+Updated: 2026-09-19 (pass 0003 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -59,6 +59,7 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 
 ## ADDED 2026-09-18 (Alpha, Kirk-directed): DABS quarantine gate before Discord wiring
 - [ ] NEW RULE: all agent messages/claims enter kirkbradford0/dabs first, 72h dwell, then Charlie/promoting-agent verifies before entering SKS. Doctrine: DABS-QUARANTINE.md. Hot lane (prices/alerts) flows direct but tagged [UNVERIFIED-HOT] with same-session cross-check.
+  - Dwell clock (checked 2026-09-19 pass 0003): pending cards = charlie-001..004 (attack on runtime guards) + bravo-001 (guard local execution), all entered 2026-09-18 → earliest verification eligibility **2026-09-21**. No new cards since.
 - [ ] BEFORE wiring Discord bots into the swarm: stand up dabs intake flow (card naming DABS-YYYYMMDD-<agent>-<seq>.md, dwell tracking). Discord is not connected until the airlock exists.
 
 ## ADDED 2026-09-18 (Charlie passoff — source committed 1cbe40f 2026-09-19)
