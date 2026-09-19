@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-19 (pass 0003 MT) by Hermes cron "SKS running tasks"
+Updated: 2026-09-19 (pass 0004 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -57,9 +57,26 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 - [ ] Job search: Intro packet ready (Kirk clicks Submit — see Kirk owes); DEAD, do not chase: Motley Fool 5202271007 (ATS closed 2026-09-12, Charlie commit 8cec618), LearnLux 5381389008 (closed 2026-09-12), Concentric Junior OSINT, Augur Researcher, INFUSE B2B Content Writer 4707669005. Aggregators still echo the corpses — re-hit the employer board before any Submit.
 - [ ] Charlie burn-desk (private, shop box only, handoff 2026-09-17): splits cash / invested / debt, three runways, flags incomplete nut + zero income, refuses to annualize a 2-day cash drop. 8 unit tests pass. Personal amounts stay OFF SKS — SKS records only that the desk exists. Not certified; not on cron.
 
+## ADDED 2026-09-19 (Alpha weekend warboard, commit 5aeb5cc) — read `SKS weekend warboard + week goals 2026-09-19.md` for full cards
+
+- [ ] W1 Alpha: WB-01 statute map — 10 Utah re-entry questions → le.utah.gov cites + honesty lines. Success = `SKS WB-01 Utah statute map v1 2026-09-19.md` in sks- + DABS card filed.
+  route: alpha · tier: local · basis: research build; Charlie verifies
+- [ ] W2 Alpha: WB-05 outreach target list draft — 10 Utah/defense-adjacent attorneys + 10 re-entry non-profits. Success = `SKS WB-05 outreach targets v1 2026-09-19.md`, 20 rows, no invented emails.
+  route: alpha · tier: local · basis: research build; Kirk gates sending
+- [ ] W3 Kirk: GLM swap for Bravo + Charlie — both profiles answer a test prompt on local GLM, then one line in AGENT_STATUS_PACKET.md ("Bravo + Charlie on local GLM as of <date>"). NOT done as of 09-19 (no GLM line in packet).
+  route: kirk · tier: kirk · basis: infra/config is Kirk's
+- [ ] W5 Muse nudge: WB-04 Constitution + Voice — 2-day deliverable due ~2026-09-20; constitution v0 skeleton filed to sks- even if rough.
+  route: muse · tier: worker · basis: accepted seat deliverable
+- [ ] M1 (Monday 09-21+) Charlie: verification debt — verify agent_pbft.py + circuit breakers, resolve DABS charlie-001..004 + bravo-001 at 72h, WB-03 skeleton + first failing test. Author never certifies own work.
+  route: charlie · tier: worker · basis: verification is Charlie's role
+- [ ] M2 Bravo (on GLM): WB-02 drafting pipeline skeleton — motion-support draft template, citation slots reference WB-01 v1 only.
+  route: bravo · tier: worker · basis: build task
+- [ ] M3 Alpha (Judge hat): accept/flag/escalate logic live; first ruling = WB-01 goes to Charlie, routing table updated.
+  route: alpha · tier: local · basis: rotation doctrine
+
 ## ADDED 2026-09-18 (Alpha, Kirk-directed): DABS quarantine gate before Discord wiring
 - [ ] NEW RULE: all agent messages/claims enter kirkbradford0/dabs first, 72h dwell, then Charlie/promoting-agent verifies before entering SKS. Doctrine: DABS-QUARANTINE.md. Hot lane (prices/alerts) flows direct but tagged [UNVERIFIED-HOT] with same-session cross-check.
-  - Dwell clock (checked 2026-09-19 pass 0003): pending cards = charlie-001..004 (attack on runtime guards) + bravo-001 (guard local execution), all entered 2026-09-18 → earliest verification eligibility **2026-09-21**. No new cards since.
+  - Dwell clock (checked 2026-09-19 pass 0004, dabs repo 2b0160f): pending cards = charlie-001..004 (attack on runtime guards) + bravo-001 (guard local execution), all entered 2026-09-18 → earliest verification eligibility **2026-09-21**. No new cards since; verified/ still empty.
 - [ ] BEFORE wiring Discord bots into the swarm: stand up dabs intake flow (card naming DABS-YYYYMMDD-<agent>-<seq>.md, dwell tracking). Discord is not connected until the airlock exists.
 
 ## ADDED 2026-09-18 (Charlie passoff — source committed 1cbe40f 2026-09-19)
