@@ -81,7 +81,9 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 
 ## ADDED 2026-09-18 (Charlie passoff — source committed 1cbe40f 2026-09-19)
 
-- [ ] WB-03 legal-content verification harness (war board) — Charlie's card, due **2026-10-02**, not started. Bravo owns WB-02. Resume via private skill `charlie-fm-api-passoff` in `kirkbradford0/sks-skills` (instructions stay in private vault, not sks-). Source state now COMMITTED 2026-09-19 (1cbe40f): `SKS Charlie status packet.json` (status "working"), `skills/README.md` overflow note, `SKS Charlie passoff 2026-09-18.md`. SparkPost-as-skill not yet written.
+- [ ] **INTAKE RULE (Kirk 2026-09-19, dabs DABS-20260919-alpha-001)**: inference-agent intake asks case status FIRST (open/closed/none); open-case answers are LOCAL-ONLY — never cloud (Supabase etc.), repo, or chat, because third-party-hosted data is discoverable by defense AND prosecution. Pending: Charlie doctrine check + Kirk root sign-off.
+  route: charlie (verify) + kirk (root) · tier: kirk · basis: product-logic + legal handling gate
+- [ ] **WB-03 legal-content verification harness (war board)** — Charlie's card, due **2026-10-02**, not started. Bravo owns WB-02. Resume via private skill `charlie-fm-api-passoff` in `kirkbradford0/sks-skills` (instructions stay in private vault, not sks-). Source state now COMMITTED 2026-09-19 (1cbe40f): `SKS Charlie status packet.json` (status "working"), `skills/README.md` overflow note, `SKS Charlie passoff 2026-09-18.md`. SparkPost-as-skill not yet written.
   route: charlie · tier: worker · basis: verification harness is Charlie's role
 
 ## ADDED 2026-09-18 (Alpha): Muse seat accepted
