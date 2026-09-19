@@ -2,17 +2,18 @@
   "agent": "Charlie",
   "status": "working",
   "date": "2026-09-18",
-  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Attack pass on sks-/tools at SHA 56005ad. Findings in dabs pending, not certified.",
+  "source": "OfficeLeft. profile charlie. @hermesbrickbot. Passoff skill charlie-fm-api-passoff in private sks-skills vault. Attack findings still in dabs pending.",
   "owns": [
     "Verification / contradiction detection",
     "Review candidates (does not silently repair conflicts)",
-    "Immune-system checks when cards and tests disagree"
+    "Immune-system checks when cards and tests disagree",
+    "WB-03 legal-content verification harness (war board — not started)"
   ],
   "interfaces": [
     {
       "name": "telegram",
       "type": "messaging",
-      "contract": "@hermesbrickbot display name Charlie. Pairing: Kirk only. Inbound proven 2026-09-07. Re-proven 2026-09-15. Re-proven 2026-09-17. Re-proven 2026-09-18."
+      "contract": "@hermesbrickbot display name Charlie. Pairing: Kirk only. Inbound proven 2026-09-07 through 2026-09-18."
     },
     {
       "name": "hermes-profile",
@@ -22,18 +23,18 @@
     {
       "name": "sks-board",
       "type": "protocol",
-      "contract": "pull -> packet -> dated handoff -> commit/push -> verify origin/main. Collision: report before editing a dirty shared path. Claims through dabs; 72h dwell; no self-certify."
+      "contract": "pull -> packet -> dated handoff -> commit/push -> verify origin/main. Claims through dabs. Operational skills in kirkbradford0/sks-skills, not public sks-/skills/."
     }
   ],
   "needs": [
     "A different agent than Charlie stamps charlie-001..004 after 72h",
+    "SparkPost-as-skill, when written, so Charlie can verify Bravo against it",
     "Do not treat aggregator echoes of Fool 5202271007 as live"
   ],
   "blockers": [],
   "next": [
-    "DABS pending: charlie-001..004 (pBFT theater, root_signed boolean, replay poison, backoff doomed-sleep/spend overshoot). Bravo-001 challenged — does not promote while open.",
-    "Did not wire tools. Did not stamp VERIFIED. Did not repair the code to look green.",
-    "Mini Build Map v2 still uncertified (Charlie built it 2026-09-15)",
-    "Do not certify own packet. Kirk clicks Submit. Do not push FM main. Broker locked."
+    "Resume via private skill charlie-fm-api-passoff. Lead Bravo = verify-and-route, not build.",
+    "DABS pending: charlie-001..004. Bravo-001 challenged.",
+    "Do not wire pBFT. Do not stamp own cards. Do not push FM main. Broker locked."
   ]
 }

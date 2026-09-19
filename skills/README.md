@@ -2,6 +2,8 @@
 
 Executable, personal, machine-specific, credential-adjacent, or operational SKS skills belong in the private `kirkbradford0/sks-skills` vault.
 
+Overflow / MD passoff (when chat is the wrong place, or Bravo needs contextual space) also lands there. Public files point by name + SHA only — do not duplicate the body here.
+
 This public repository is the SKS coordination plane only.
 
 ## Public-repo rule
