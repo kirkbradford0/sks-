@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-19 (pass 0005 MT) by Hermes cron "SKS running tasks"
+Updated: 2026-09-20 (pass 0006 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -56,6 +56,8 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 - [ ] Shop kiosk: Lovable check-in still discards data — backend wiring lives at C:/Users/bradf/kiosk-node/
 - [ ] Job search: Intro packet ready (Kirk clicks Submit — see Kirk owes); DEAD, do not chase: Motley Fool 5202271007 (ATS closed 2026-09-12, Charlie commit 8cec618), LearnLux 5381389008 (closed 2026-09-12), Concentric Junior OSINT, Augur Researcher, INFUSE B2B Content Writer 4707669005. Aggregators still echo the corpses — re-hit the employer board before any Submit.
 - [ ] Charlie burn-desk (private, shop box only, handoff 2026-09-17): splits cash / invested / debt, three runways, flags incomplete nut + zero income, refuses to annualize a 2-day cash drop. 8 unit tests pass. Personal amounts stay OFF SKS — SKS records only that the desk exists. Not certified; not on cron.
+- [ ] **SnowStrike** (C:/Users/bradf/snowstrike, repo kirkbradford0/operation_snow_strike, built+pushed 2590444 on 2026-09-19): FM marketing campaign machine — 100 FM users by Dec 25, 2026, harden date Oct 1. Locked 10-step daily loop, five-seat team, volley schema with [UNVERIFIED-HOT] quarantine, open-case content banned repo-wide. Loop starts **2026-09-21**; NOT cron'd yet — runbook is docs/DAILY-SKILL-PROMPT.md (Kirk trigger: "run the SnowStrike volley", or wire the daily cron). Outreach gate baked in: agents stage packets, Kirk clicks Send — never automate the send.
+  route: hermes/sparky → kirk (sends) · tier: worker · basis: publish/send clicks stay Kirk
 
 ## ADDED 2026-09-19 (Alpha weekend warboard, commit 5aeb5cc) — read `SKS weekend warboard + week goals 2026-09-19.md` for full cards
 
@@ -76,7 +78,7 @@ Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `ro
 
 ## ADDED 2026-09-18 (Alpha, Kirk-directed): DABS quarantine gate before Discord wiring
 - [ ] NEW RULE: all agent messages/claims enter kirkbradford0/dabs first, 72h dwell, then Charlie/promoting-agent verifies before entering SKS. Doctrine: DABS-QUARANTINE.md. Hot lane (prices/alerts) flows direct but tagged [UNVERIFIED-HOT] with same-session cross-check.
-  - Dwell clock (checked 2026-09-19 pass 0005, dabs repo 137bd6c): pending = charlie-001..004 + bravo-001 (entered 2026-09-18 → eligible **2026-09-21**) + alpha-001 (intake rule, entered 2026-09-19 → eligible 2026-09-22). verified/ still empty.
+  - Dwell clock (checked 2026-09-20 pass 0006, dabs repo 137bd6c — unchanged): pending = charlie-001..004 + bravo-001 (entered 2026-09-18 → eligible **2026-09-21**) + alpha-001 (intake rule, entered 2026-09-19 → eligible 2026-09-22). verified/ still empty.
 - [ ] BEFORE wiring Discord bots into the swarm: stand up dabs intake flow (card naming DABS-YYYYMMDD-<agent>-<seq>.md, dwell tracking). Discord is not connected until the airlock exists.
 
 ## ADDED 2026-09-18 (Charlie passoff — source committed 1cbe40f 2026-09-19)
