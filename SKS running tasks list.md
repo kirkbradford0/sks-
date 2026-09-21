@@ -5,6 +5,14 @@ Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and 
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
 
+## CATCH-UP PROTOCOL (2026-09-21, Kirk order: no copy-paste, no token burn)
+
+Any agent (Bravo, Charlie, MedicBot, new seats) catching up does it from the repo, NOT from pasted chat context:
+1. `git pull` sks- (and sparkpost/operation_snow_strike/dabs as relevant)
+2. Read: SKS running tasks list.md → latest dated handoff for your seat → PATRIARCH-ROUTING.md
+3. Work your OPEN items, commit handoffs back. Kirk pastes nothing.
+Chat (Telegram/Discord) is for orders and questions — never for transferring state.
+
 ## OPEN — Kirk (H.I.L.) owes
 
 - [ ] Name a Telegram bot for MedicBot (never @theegrokbot)
