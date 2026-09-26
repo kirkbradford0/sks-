@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-21 (pass 0007 MT) by Hermes cron "SKS running tasks"
+Updated: 2026-09-26 (pass 0008 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -29,7 +29,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
   route: kirk (open/sign) · tier: kirk · basis: certification gate
 - [ ] Paste/photo the next burn snapshot (bank cash, brokerage total, debt) to Charlie — Charlie's private burn-desk (handoff 2026-09-17) computes runway; do NOT treat invested as liquid. No cron on the burn-desk unless Kirk asks. Charlie built it, does not certify the books — money decisions stay Kirk.
   route: kirk (snapshot) → charlie (compute) · tier: worker · basis: local math; money clicks stay Kirk
-- [ ] Click a fresh Google auth link (google-workspace setup.py --auth-url) — OAuth token revoked since 2026-09-11 (invalid_grant); Gmail auto-sort + gws CLI dead until re-authed. Verified dead 2026-09-17: google_token.json mtime still 2026-09-01; the staged 2026-09-13 11:28 pending flow was never exchanged and is expired — generate fresh, don't reuse.
+- [ ] Click a fresh Google auth link — TWO dead tokens (both invalid_grant), verified 2026-09-26: (a) gws google_token.json mtime still 2026-09-01; Gmail auto-sort + gws CLI dead; (b) felonsmelon@gmail.com for campaign test volley — fresh PKCE link issued to Kirk in Telegram 2026-09-25, verifier staged (hermes/google_oauth_pending.json, mtime 09-25 18:01, never exchanged). Kirk approves as felonsmelon@gmail.com, pastes back the localhost?code= URL. Blocks: test volley, Gmail drafts, auto-sort, gws.
   route: worker (generate link) → kirk (click) · tier: kirk · basis: OAuth click is Kirk's
 
 ## OPEN — Fleet tasks
@@ -64,7 +64,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
 - [ ] Shop kiosk: Lovable check-in still discards data — backend wiring lives at C:/Users/bradf/kiosk-node/
 - [ ] Job search: Intro packet ready (Kirk clicks Submit — see Kirk owes); DEAD, do not chase: Motley Fool 5202271007 (ATS closed 2026-09-12, Charlie commit 8cec618), LearnLux 5381389008 (closed 2026-09-12), Concentric Junior OSINT, Augur Researcher, INFUSE B2B Content Writer 4707669005. Aggregators still echo the corpses — re-hit the employer board before any Submit.
 - [ ] Charlie burn-desk (private, shop box only, handoff 2026-09-17): splits cash / invested / debt, three runways, flags incomplete nut + zero income, refuses to annualize a 2-day cash drop. 8 unit tests pass. Personal amounts stay OFF SKS — SKS records only that the desk exists. Not certified; not on cron.
-- [ ] **SnowStrike** (C:/Users/bradf/snowstrike, repo kirkbradford0/operation_snow_strike, built+pushed 2590444 on 2026-09-19): FM marketing campaign machine — 100 FM users by Dec 25, 2026, harden date Oct 1. Locked 10-step daily loop, five-seat team, volley schema with [UNVERIFIED-HOT] quarantine, open-case content banned repo-wide. Loop start date = **2026-09-21 (today)** — as of pass 0007 00:00 MT no volley has run and the daily cron is still NOT wired (cron list re-checked 2026-09-21: only "SKS running tasks" + "SparkPost heartbeat" active). Runbook is docs/DAILY-SKILL-PROMPT.md (Kirk trigger: "run the SnowStrike volley", or wire the daily cron). Outreach gate baked in: agents stage packets, Kirk clicks Send — never automate the send.
+- [ ] **SnowStrike** (C:/Users/bradf/snowstrike, repo kirkbradford0/operation_snow_strike, built+pushed 2590444 on 2026-09-19): FM marketing campaign machine — 100 FM users by Dec 25, 2026, harden date Oct 1. Locked 10-step daily loop, five-seat team, volley schema with [UNVERIFIED-HOT] quarantine, open-case content banned repo-wide. **Re-verified 2026-09-26: ZERO volleys have run** — loop start was 09-21, volleys/ empty and untracked, repo HEAD unchanged 2590444 since 09-19; daily cron still NOT wired (live crons: "SKS running tasks" 6-hourly + "SparkPost heartbeat" 08:00, both pinned to ollama-cloud/glm-5.3-flash, deliver=telegram war-drum as of 09-25). Runbook is docs/DAILY-SKILL-PROMPT.md (Kirk trigger: "run the SnowStrike volley", or wire the daily cron). Outreach gate baked in: agents stage packets, Kirk clicks Send — never automate the send.
   route: hermes/sparky → kirk (sends) · tier: worker · basis: publish/send clicks stay Kirk
 
 ## ADDED 2026-09-19 (Alpha weekend warboard, commit 5aeb5cc) — read `SKS weekend warboard + week goals 2026-09-19.md` for full cards
@@ -86,7 +86,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
 
 ## ADDED 2026-09-18 (Alpha, Kirk-directed): DABS quarantine gate before Discord wiring
 - [ ] NEW RULE: all agent messages/claims enter kirkbradford0/dabs first, 72h dwell, then Charlie/promoting-agent verifies before entering SKS. Doctrine: DABS-QUARANTINE.md. Hot lane (prices/alerts) flows direct but tagged [UNVERIFIED-HOT] with same-session cross-check.
-  - Dwell clock (checked 2026-09-21 pass 0007, dabs repo 137bd6c — unchanged): pending = charlie-001..004 + bravo-001 (entered 2026-09-18 → 72h dwell **elapsed 2026-09-21**; eligible for Charlie verification NOW, nothing moves until a different agent verifies — M1 below) + alpha-001 (intake rule, entered 2026-09-19 → eligible 2026-09-22). verified/ still empty.
+  - Dwell clock (re-checked 2026-09-26 pass 0008, dabs repo 137bd6c — unchanged): pending = charlie-001..004 + bravo-001 (dwell **elapsed 2026-09-21**) + alpha-001 (intake rule, entered 2026-09-19 → eligible 2026-09-22). verified/ still EMPTY. Five-plus days overdue — verification is the blocker on M1.
 - [ ] BEFORE wiring Discord bots into the swarm: stand up dabs intake flow (card naming DABS-YYYYMMDD-<agent>-<seq>.md, dwell tracking). Discord is not connected until the airlock exists.
 
 ## ADDED 2026-09-18 (Charlie passoff — source committed 1cbe40f 2026-09-19)
@@ -99,3 +99,12 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
 ## ADDED 2026-09-18 (Alpha): Muse seat accepted
 
 - [ ] When Discord connects: hold Muse to the 2-day deliverable (culture layer pins/rituals + "what we learned" thread in the board, due ~2026-09-20); source of truth stays sks-/dabs. (Muse accepted the fifth seat 2026-09-18 ~10:35 MT — struck from list per done-removal rule.)
+
+## ADDED 2026-09-25 (handoffs 1cbd482 sniperbot + 0e97f55 Hermes — campaign 100x100 + HIL-DECK)
+
+- [ ] **Campaign 100x100 wave-1 (GREEN LIGHT Kirk 09-25)** — West Coast only (CA/OR/WA), 100 orgs + 100 people, then PAUSE/review/respond. Transparent cold email (anti-spam review concluded): honest subject, identify in line 1, one follow-up max after 7d, real reply-to, opt-out honored, no open-case advice (FM INTAKE RULE), HITL — Kirk presses go per batch. Wave-1 staked: 6 verified emails + 10 contact-form-only (go-between campaign-100x100/orgs/wave-1-org-list.md). NEXT: Kirk reviews outreach-email-ORGS-draft.md → batch-1 send with approval → continue org harvest toward 100. People lane = ONLY public askers (reddit r/Felons etc), never scraped/bought lists.
+  route: hermes → kirk (review + send) · tier: kirk · basis: outreach sends are Kirk's click
+- [ ] **Test volley (10 emails)** — Kirk seeds (kirkbradford0@gmail + kirkbradford1@icloud) + 5 West Coast orgs; plain text + hyperlinks; from felonsmelon@gmail.com; Gmail DRAFT queue; Kirk presses send; then trace paths/links/rendering. Domain rule locked: felonsmelon.com (singular) live HTTP 200 — felonsmelons.com (plural) DNS-dead, never link it. BLOCKED on Gmail OAuth paste-back (see Kirk owes).
+  route: hermes (drafts) → kirk (send) · tier: kirk · basis: HITL send gate
+- [ ] **HIL-DECK open items** (sparkpost/hil-deck, commit e9b6336): (1) verify first deck execution through SparkPost heartbeat — as of 2026-09-26 hil-deck/done/ is empty, nothing processed yet; (2) Charlie cold-verify the deck server finish-capture path (Hermes smoke-tested it itself — no-self-certify rule). Deck server on OfficeLeft port 8799 dies on reboot; START-DECK.bat is the launcher. First deck = 6 cards: D1 test volley, D2 Pinterest batch, D3 $19 kit price, D4 FB engine-vs-Marketplace, D5 Discord briefs, D6 Amazon gating (Kirk-only).
+  route: hermes (heartbeat exec) · charlie (cold verify) · tier: worker · basis: playbooked lanes; sends/purchases stay HITL
