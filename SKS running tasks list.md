@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-27 (pass 0010 MT) by Hermes cron "SKS running tasks"
+Updated: 2026-09-28 (pass 0011 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -29,7 +29,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
   route: kirk (open/sign) · tier: kirk · basis: certification gate
 - [ ] Paste/photo the next burn snapshot (bank cash, brokerage total, debt) to Charlie — Charlie's private burn-desk (handoff 2026-09-17) computes runway; do NOT treat invested as liquid. No cron on the burn-desk unless Kirk asks. Charlie built it, does not certify the books — money decisions stay Kirk.
   route: kirk (snapshot) → charlie (compute) · tier: worker · basis: local math; money clicks stay Kirk
-- [ ] Click a fresh Google auth link — TWO dead tokens (both invalid_grant), verified 2026-09-26: (a) gws google_token.json mtime still 2026-09-01; Gmail auto-sort + gws CLI dead; (b) felonsmelon@gmail.com for campaign test volley — fresh PKCE link issued to Kirk in Telegram 2026-09-25, verifier staged (hermes/google_oauth_pending.json, mtime 09-25 18:01, never exchanged). Kirk approves as felonsmelon@gmail.com, pastes back the localhost?code= URL. Blocks: test volley, Gmail drafts, auto-sort, gws.
+- [ ] Click a fresh Google auth link — TWO dead tokens (both invalid_grant), verified 2026-09-26: (a) gws google_token.json mtime still 2026-09-01 (re-verified 09-28); Gmail auto-sort + gws CLI dead; (b) felonsmelon@gmail.com for campaign test volley — PKCE verifier still armed (google_oauth_pending.json mtime 09-25 18:01, never exchanged), and the 09-26 auto-capture caught junk (`/favicon.ico`, not a code). Kirk approves as felonsmelon@gmail.com and pastes back the full localhost?code= URL (or runs the shop-PC catcher on port 80). Blocks: test volley, Gmail drafts, auto-sort, gws.
   route: worker (generate link) → kirk (click) · tier: kirk · basis: OAuth click is Kirk's
 
 ## OPEN — Fleet tasks
@@ -105,6 +105,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
 ## ADDED 2026-09-25 (handoffs 1cbd482 sniperbot + 0e97f55 Hermes — campaign 100x100 + HIL-DECK)
 
 - [ ] **Campaign 100x100 wave-1 (GREEN LIGHT Kirk 09-25)** — West Coast only (CA/OR/WA), 100 orgs + 100 people, then PAUSE/review/respond. Transparent cold email (anti-spam review concluded): honest subject, identify in line 1, one follow-up max after 7d, real reply-to, opt-out honored, no open-case advice (FM INTAKE RULE), HITL — Kirk presses go per batch. Wave-1 staked: 6 verified emails + 10 contact-form-only (go-between campaign-100x100/orgs/wave-1-org-list.md; re-counted 2026-09-27 = 16 staked). NEXT: Kirk reviews outreach-email-ORGS-draft.md → batch-1 send with approval → continue org harvest toward 100. People lane = ONLY public askers (reddit r/Felons etc), never scraped/bought lists. UPDATE 2026-09-27: MISSION.md in go-between now carries KIRK-COPY RULE (every outbound BCCs kirkbradford1@icloud.com + kinloaslate@gmail.com — NOT kirkbradford0) + anti-spam rules; still no batch sent (Kirk hasn't reviewed the draft).
+  - PLANNING STAKED in go-between (2026-09-27/28): `12-WEEK-ROADMAP-2026-09-27.md` (batch structure = test 10 → Batch A 30 → B 30 → C 30, weekly scoreboard map to 100 users by Dec 14-20, Sunday-review ritual) + `TOMORROW-PLAN-2026-09-28.md` (send-day checklist). TWO PRE-SEND BLOCKERS from tomorrow-plan: (1) OAuth — google_oauth_captured.txt caught junk (`/favicon.ico`, mtime 09-26 20:50), PKCE verifier still armed, Kirk must paste the localhost?code= URL; (2) outreach-email-ORGS-draft.md still has **2× felonsmelons.com (plural, dead)** — Hermes fixes to felonsmelon.com SINGULAR and re-presents for approval. Gmail caps verified: 500 recipients/day, BCCs count → steady-state self-cap 50 cold emails/day.
   route: hermes → kirk (review + send) · tier: kirk · basis: outreach sends are Kirk's click
 - [ ] **Test volley (10 emails)** — Kirk seeds (kirkbradford0@gmail + kirkbradford1@icloud) + 5 West Coast orgs; plain text + hyperlinks; from felonsmelon@gmail.com; Gmail DRAFT queue; Kirk presses send; then trace paths/links/rendering. Domain rule locked: felonsmelon.com (singular) live HTTP 200 — felonsmelons.com (plural) DNS-dead, never link it. BLOCKED on Gmail OAuth paste-back (see Kirk owes).
   route: hermes (drafts) → kirk (send) · tier: kirk · basis: HITL send gate
