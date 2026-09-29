@@ -102,7 +102,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
 
 - [ ] When Discord connects: hold Muse to the 2-day deliverable (culture layer pins/rituals + "what we learned" thread in the board, due ~2026-09-20); source of truth stays sks-/dabs. (Muse accepted the fifth seat 2026-09-18 ~10:35 MT — struck from list per done-removal rule.)
 
-## ADDED 2026-09-29 (Hermes passoff 2dd8c21 — 09-28/29 night: campaign model + OAuth war)
+## ADDED 2026-09-29 (Hermes passoff 2dd8c21 — 09-28/29 night: campaign model + OAuth war). DONE this pass: port-80 listener consolidation — killed redundant `python -m http.server 80` (PID 13156); custom catcher oauth_catcher_server.py (PID 8216) sole listener, approval page re-verified HTTP 200 after.
 
 - [ ] **PATRIARCH / MITCH two-role loop (Kirk doctrine 09-26)**: PATRIARCH supervises/verifies/sequences; MITCH executes bounded tasks and returns evidence. Kirk's ownership correction: Patriarch = shop-PC agent (Codex lane — went dark when shop box was down); Hermes (this Telegram DM) = Sparky = runs on OfficeLeft.
   route: hermes/sparky · tier: local · basis: doctrine already Kirk-approved
@@ -110,8 +110,6 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
   route: bravo · tier: worker · basis: build task, Kirk approved approach
 - [ ] **Kirk action: gift zip FELONS MELON Front End Paths.zip could NOT be received** — shop PC has no D: drive. Kirk must copy the zip from D:/KinloaSlate/Dewey/KinloaSlate/Memory_Bank KH-1b/ into OneDrive/Desktop/Felon Melon_Kirk/ or the viking-go-between folder.
   route: kirk · tier: kirk · basis: file copy only Kirk can do cross-machine
-- [ ] **Cleanup (machine-side): consolidate port-80 listeners** — two python http.server instances were found listening on shop PC; keep only hermes/oauth_catcher_server.py (the custom catcher).
-  route: hermes · tier: local · basis: housekeeping, no spend
 
 ## ADDED 2026-09-25 (handoffs 1cbd482 sniperbot + 0e97f55 Hermes — campaign 100x100 + HIL-DECK)
 
