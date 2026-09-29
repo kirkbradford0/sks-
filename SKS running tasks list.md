@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-29 (pass 0014, ~00:05 MT) by Hermes cron "SKS running tasks"
+Updated: 2026-09-29 (pass 0015, ~06:05 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -29,7 +29,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
   route: kirk (open/sign) · tier: kirk · basis: certification gate
 - [ ] Paste/photo the next burn snapshot (bank cash, brokerage total, debt) to Charlie — Charlie's private burn-desk (handoff 2026-09-17) computes runway; do NOT treat invested as liquid. No cron on the burn-desk unless Kirk asks. Charlie built it, does not certify the books — money decisions stay Kirk.
   route: kirk (snapshot) → charlie (compute) · tier: worker · basis: local math; money clicks stay Kirk
-- [ ] Click a fresh Google auth link — TWO dead tokens (both invalid_grant), verified 2026-09-26: (a) gws google_token.json mtime still 2026-09-01 (re-verified 09-28); Gmail auto-sort + gws CLI dead; (b) felonsmelon@gmail.com for campaign test volley — PKCE verifier still armed (google_oauth_pending.json mtime 09-25 18:01, never exchanged), and the 09-26 auto-capture caught junk (`/favicon.ico`, not a code). Kirk approves as felonsmelon@gmail.com and pastes back the full localhost?code= URL (or runs the shop-PC catcher on port 80). Blocks: test volley, Gmail drafts, auto-sort, gws.
+- [ ] Click a fresh Google auth link — TWO dead tokens (both invalid_grant), verified 2026-09-26: (a) gws google_token.json mtime still 2026-09-01 (re-verified 09-28); Gmail auto-sort + gws CLI dead; (b) felonsmelon@gmail.com for campaign test volley — PKCE verifier armed (google_oauth_pending.json mtime 09-25 18:01) and the port-80 catcher is RE-ARMED 2026-09-29 06:0x (it died on reboot — machine up since 09-23; restarted oauth_catcher_server.py as PID 19268, verified: approval page HTTP 200 on shop LAN http://192.168.1.253/Felon%20Melon_Kirk/hermes-approval.html, embedded auth URL state matches pending verifier, capture path writes google_oauth_captured.txt end-to-end). Kirk approves as felonsmelon@gmail.com and pastes back the full localhost?code= URL (or clicks the approval-page auth link — the catcher catches it). Blocks: test volley, Gmail drafts, auto-sort, gws.
   route: worker (generate link) → kirk (click) · tier: kirk · basis: OAuth click is Kirk's
 
 ## OPEN — Fleet tasks
@@ -102,7 +102,10 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
 
 - [ ] When Discord connects: hold Muse to the 2-day deliverable (culture layer pins/rituals + "what we learned" thread in the board, due ~2026-09-20); source of truth stays sks-/dabs. (Muse accepted the fifth seat 2026-09-18 ~10:35 MT — struck from list per done-removal rule.)
 
-## ADDED 2026-09-29 (Hermes passoff 2dd8c21 — 09-28/29 night: campaign model + OAuth war). DONE this pass: port-80 listener consolidation — killed redundant `python -m http.server 80` (PID 13156); custom catcher oauth_catcher_server.py (PID 8216) sole listener, approval page re-verified HTTP 200 after.
+## ADDED 2026-09-29 (Hermes passoff 2dd8c21 — 09-28/29 night: campaign model + OAuth war). DONE 09-28: port-80 listener consolidation (then re-verified/re-ARMED 09-29 06:0x pass 0015 — catcher died on reboot, restarted).
+
+- [ ] NEW 2026-09-29 00:58: **Emailsmissingfiles.zip landed in go-between root** (13 files: README + 6 FM segment email templates — fm_fresh_arrest, fm_probation, fm_parole, fm_college_open_case, + followup 1/2, each html+txt). Merge-field syntax {first_name}/{state}/{link}/{address}/{unsub}/{original_subject}; sequence day-0 → day-4 → day-10; CAN-SPAM rules; HOLD: no send until one real user completes intake to a delivered narrative in production. OPEN: unzip into Operation-Mer-ki repo (campaign code goes THERE per Kirk split order) + wire to campaign lane.
+  route: hermes/bravo · tier: worker · basis: unpack + stage; sends stay Kirk
 
 - [ ] **PATRIARCH / MITCH two-role loop (Kirk doctrine 09-26)**: PATRIARCH supervises/verifies/sequences; MITCH executes bounded tasks and returns evidence. Kirk's ownership correction: Patriarch = shop-PC agent (Codex lane — went dark when shop box was down); Hermes (this Telegram DM) = Sparky = runs on OfficeLeft.
   route: hermes/sparky · tier: local · basis: doctrine already Kirk-approved
