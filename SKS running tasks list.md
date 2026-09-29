@@ -1,6 +1,6 @@
 # SKS running tasks list
 
-Updated: 2026-09-29 (pass 0015, ~06:05 MT) by Hermes cron "SKS running tasks"
+Updated: 2026-09-29 (pass 0016, ~12:05 MT) by Hermes cron "SKS running tasks"
 Owner: whoever is on duty. Cron job "SKS running tasks" refreshes this file and commits.
 Rule: anything in the works or incomplete lives here. Done items get struck and then removed on next pass. Chat is not state — this file + SKS repo is.
 Routing doctrine (PATRIARCH-ROUTING.md v1.0, 2026-09-17): every task carries `route: <target> · tier: local|worker|frontier|kirk · basis: <reason>`. Frontier = exception handler, earned after 2 stuck worker attempts, never for money/reputation lanes. Lessons go to `lessons/` in sks- (dir created on first real lesson).
@@ -104,7 +104,7 @@ Chat (Telegram/Discord) is for orders and questions — never for transferring s
 
 ## ADDED 2026-09-29 (Hermes passoff 2dd8c21 — 09-28/29 night: campaign model + OAuth war). DONE 09-28: port-80 listener consolidation (then re-verified/re-ARMED 09-29 06:0x pass 0015 — catcher died on reboot, restarted).
 
-- [ ] NEW 2026-09-29 00:58: **Emailsmissingfiles.zip landed in go-between root** (13 files: README + 6 FM segment email templates — fm_fresh_arrest, fm_probation, fm_parole, fm_college_open_case, + followup 1/2, each html+txt). Merge-field syntax {first_name}/{state}/{link}/{address}/{unsub}/{original_subject}; sequence day-0 → day-4 → day-10; CAN-SPAM rules; HOLD: no send until one real user completes intake to a delivered narrative in production. OPEN: unzip into Operation-Mer-ki repo (campaign code goes THERE per Kirk split order) + wire to campaign lane.
+- [ ] Emailsmissingfiles.zip landed in go-between root 09-29 00:58 — **UNZIPPED DONE 09-29 (this pass, commit 809ca54 in Operation-Mer-ki): 13 files now at Operation-Mer-ki/emails/ (6 segments + 2 followups + README), pushed to origin/main, verified ls-remote.** Templates clean — no plural-domain leak (only "FelonsMelon" branding). Merge fields {first_name}/{state}/{link}/{address}/{unsub}/{original_subject}; sequence day-0 → day-4 → day-10; sender "Kirk Bradford" + real reply-to; HOLD: no send until one real user completes intake to a delivered narrative in production; health gates: unsubscribe pause >2%, spam complaints >0.1%. NEXT: wire sequence to campaign lane (day counter + tracking ?seg=), still gated on OAuth + Kirk review.
   route: hermes/bravo · tier: worker · basis: unpack + stage; sends stay Kirk
 
 - [ ] **PATRIARCH / MITCH two-role loop (Kirk doctrine 09-26)**: PATRIARCH supervises/verifies/sequences; MITCH executes bounded tasks and returns evidence. Kirk's ownership correction: Patriarch = shop-PC agent (Codex lane — went dark when shop box was down); Hermes (this Telegram DM) = Sparky = runs on OfficeLeft.
